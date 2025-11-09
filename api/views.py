@@ -1,3 +1,7 @@
+from rest_framework import generics
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import TokenObtainPairView
+from .serializers import UserSignupSerializer
 from rest_framework import viewsets, permissions
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from django.contrib.auth import get_user_model
@@ -69,3 +73,28 @@ class UserBadgeViewSet(BaseViewSet):
     queryset = UserBadge.objects.select_related('user', 'badge')
     serializer_class = UserBadgeSerializer
 
+# ------------------------------
+# User Signup
+# ------------------------------
+class SignupView(generics.CreateAPIView):
+    serializer_class = UserSignupSerializer
+    permission_classes = [permissions.AllowAny]  # anyone can sign up
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        # generate JWT tokens
+        refresh = RefreshToken.for_user(user)
+        return Response({
+            "user": serializer.data,
+            "refresh": str(refresh),
+            "access": str(refresh.access_token)
+        })
+
+
+# ------------------------------
+# User Login (JWT)
+# ------------------------------
+class LoginView(TokenObtainPairView):
+    permission_classes = [permissions.AllowAny]
