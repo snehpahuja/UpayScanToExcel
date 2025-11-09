@@ -1,37 +1,65 @@
 from rest_framework import serializers
-from .models import Profile, Place, Review, Badge, UserBadge
+from django.contrib.auth import get_user_model
+from .models import Place, Review, Badge, UserBadge
+
+User = get_user_model()
 
 
-class ProfileSerializer(serializers.ModelSerializer):
+class BaseModelSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Profile
-        fields = ['id', 'username', 'email', 'role', 'points', 'location', 'bio']
+        abstract = True
+        fields = [
+            'created_by', 'created_at',
+            'updated_by', 'updated_at',
+            'deleted_by', 'deleted_at',
+            'is_deleted'
+        ]
 
 
-class PlaceSerializer(serializers.ModelSerializer):
+class ProfileSerializer(BaseModelSerializer):
+    class Meta:
+        model = User
+        fields = BaseModelSerializer.Meta.fields + [
+            'id', 'username', 'email', 'first_name', 'last_name',
+            'role', 'points', 'location', 'bio',
+            'segment', 'home_neighborhood',
+            'preferred_categories', 'price_preference',
+            'distance_tolerance_km', 'ambience_preferences',
+            'explore_rate', 'age_group'
+        ]
+
+
+class PlaceSerializer(BaseModelSerializer):
     class Meta:
         model = Place
-        fields = '__all__'
+        fields = BaseModelSerializer.Meta.fields + [
+            'id', 'place_id', 'name', 'neighborhood',
+            'cluster_label', 'latitude', 'longitude',
+            'categories', 'price_level', 'rating',
+            'user_rating_count', 'ambience', 'veg_only',
+            'cat_list', 'reviews_text'
+        ]
 
 
-class ReviewSerializer(serializers.ModelSerializer):
-    user = ProfileSerializer(read_only=True)
-
+class ReviewSerializer(BaseModelSerializer):
     class Meta:
         model = Review
-        fields = ['id', 'user', 'place', 'rating', 'comment', 'created_at']
+        fields = BaseModelSerializer.Meta.fields + [
+            'id', 'user', 'place', 'rating', 'comment', 'summary'
+        ]
 
 
-class BadgeSerializer(serializers.ModelSerializer):
+class BadgeSerializer(BaseModelSerializer):
     class Meta:
         model = Badge
-        fields = '__all__'
+        fields = BaseModelSerializer.Meta.fields + [
+            'id', 'title', 'description', 'points_required', 'icon_url'
+        ]
 
 
-class UserBadgeSerializer(serializers.ModelSerializer):
-    badge = BadgeSerializer(read_only=True)
-    user = ProfileSerializer(read_only=True)
-
+class UserBadgeSerializer(BaseModelSerializer):
     class Meta:
         model = UserBadge
-        fields = ['id', 'user', 'badge', 'awarded_on']
+        fields = BaseModelSerializer.Meta.fields + [
+            'id', 'user', 'badge', 'awarded_at', 'active'
+        ]

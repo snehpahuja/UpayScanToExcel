@@ -1,61 +1,71 @@
-from rest_framework import viewsets, generics
-from django.contrib.auth import get_user_model
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import viewsets, permissions
 from rest_framework_simplejwt.authentication import JWTAuthentication
-
-from .models import Profile, Place, Review, Badge, UserBadge
+from django.contrib.auth import get_user_model
+from .models import Place, Review, Badge, UserBadge
 from .serializers import (
-    ProfileSerializer,
-    PlaceSerializer,
-    ReviewSerializer,
-    BadgeSerializer,
-    UserBadgeSerializer
+    ProfileSerializer, PlaceSerializer, ReviewSerializer,
+    BadgeSerializer, UserBadgeSerializer
 )
 
+User = get_user_model()
 
-# ---------- PROFILE ----------
-class ProfileViewSet(viewsets.ModelViewSet):
-    queryset = Profile.objects.all()
+
+# ------------------------------
+# Base ViewSet (shared config)
+# ------------------------------
+class BaseViewSet(viewsets.ModelViewSet):
+    """Applies global authentication and permission logic."""
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
+
+# ------------------------------
+# Profile / User
+# ------------------------------
+class ProfileViewSet(BaseViewSet):
+    queryset = User.objects.all()
     serializer_class = ProfileSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        # Non-admins can only view their own profile
+        user = self.request.user
+        if user.is_staff or getattr(user, "role", None) == "admin":
+            return User.objects.all()
+        return User.objects.filter(id=user.id)
 
 
-# ---------- PLACES ----------
-class PlaceListCreateView(generics.ListCreateAPIView):
-    queryset = Place.objects.all()
+# ------------------------------
+# Places
+# ------------------------------
+class PlaceViewSet(BaseViewSet):
+    queryset = Place.objects.filter(is_deleted=False)
     serializer_class = PlaceSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
 
 
-class PlaceViewSet(viewsets.ModelViewSet):
-    queryset = Place.objects.all()
-    serializer_class = PlaceSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
-
-
-# ---------- REVIEWS ----------
-class ReviewViewSet(viewsets.ModelViewSet):
-    queryset = Review.objects.all()
+# ------------------------------
+# Reviews
+# ------------------------------
+class ReviewViewSet(BaseViewSet):
+    queryset = Review.objects.select_related('user', 'place')
     serializer_class = ReviewSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
 
 
-# ---------- BADGES ----------
-class BadgeViewSet(viewsets.ModelViewSet):
+# ------------------------------
+# Badges
+# ------------------------------
+class BadgeViewSet(BaseViewSet):
     queryset = Badge.objects.all()
     serializer_class = BadgeSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [permissions.IsAdminUser]  # Only admins manage badges
 
 
-# ---------- USER BADGES ----------
-class UserBadgeViewSet(viewsets.ModelViewSet):
-    queryset = UserBadge.objects.all()
+# ------------------------------
+# User Badges
+# ------------------------------
+class UserBadgeViewSet(BaseViewSet):
+    queryset = UserBadge.objects.select_related('user', 'badge')
     serializer_class = UserBadgeSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
 
