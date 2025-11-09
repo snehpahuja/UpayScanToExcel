@@ -6,22 +6,26 @@ from .views import (
     ReviewViewSet,
     BadgeViewSet,
     UserBadgeViewSet,
-    PlaceListCreateView,  # existing
     SignupView,
     LoginView
 )
 
+# -----------------------------
+# Router for all ViewSets
+# -----------------------------
 router = DefaultRouter()
 router.register(r'profiles', ProfileViewSet)
-router.register(r'places', PlaceViewSet)
+router.register(r'places', PlaceViewSet)       # <-- this handles listing/creating places
 router.register(r'reviews', ReviewViewSet)
 router.register(r'badges', BadgeViewSet)
 router.register(r'userbadges', UserBadgeViewSet)
 
+# -----------------------------
+# URL patterns
+# -----------------------------
 urlpatterns = [
-    path('', include(router.urls)),
-    path('places-list/', PlaceListCreateView.as_view(), name='place-list-create'),
-    # ------------------ New signup/login endpoints ------------------
+    path('', include(router.urls)),             # all viewset routes
     path('signup/', SignupView.as_view(), name='signup'),
     path('login/', LoginView.as_view(), name='login'),
 ]
+
