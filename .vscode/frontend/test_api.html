@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Test Frontend</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      input {
+        margin: 5px 0;
+        display: block;
+      }
+      button {
+        margin: 5px 0 15px;
+      }
+      h2 {
+        margin-top: 20px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>API Test Frontend</h1>
+
+    <!-- Signup form -->
+    <h2>Signup</h2>
+    <input id="signup-username" placeholder="Username" />
+    <input id="signup-email" placeholder="Email" />
+    <input id="signup-password" type="password" placeholder="Password" />
+    <button onclick="signup()">Signup</button>
+
+    <!-- Login form -->
+    <h2>Login</h2>
+    <input id="login-username" placeholder="Username" />
+    <input id="login-password" type="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+
+    <!-- Places list -->
+    <h2>Places</h2>
+    <button onclick="getPlaces()">Get Places</button>
+    <ul id="places-list"></ul>
+
+    <script>
+      // Make sure this points to your Django backend
+      const API_BASE = "http://127.0.0.1:8000/api";
+
+      let accessToken = "";
+
+      async function signup() {
+        try {
+          const response = await fetch(`${API_BASE}/signup/`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              username: document.getElementById("signup-username").value,
+              email: document.getElementById("signup-email").value,
+              password: document.getElementById("signup-password").value,
+            }),
+          });
+
+          if (!response.ok) {
+            const errData = await response.json();
+            alert("Signup failed: " + JSON.stringify(errData));
+            return;
+          }
+
+          const data = await response.json();
+          console.log(data);
+          alert("Signup successful. Check console for details.");
+        } catch (err) {
+          console.error(err);
+          alert("Signup error: " + err);
+        }
+      }
+
+      async function login() {
+        try {
+          const response = await fetch(`${API_BASE}/login/`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              username: document.getElementById("login-username").value,
+              password: document.getElementById("login-password").value,
+            }),
+          });
+
+          if (!response.ok) {
+            const errData = await response.json();
+            alert("Login failed: " + JSON.stringify(errData));
+            return;
+          }
+
+          const data = await response.json();
+          accessToken = data.access;
+          console.log(data);
+          alert("Login successful. Token stored.");
+        } catch (err) {
+          console.error(err);
+          alert("Login error: " + err);
+        }
+      }
+
+      async function getPlaces() {
+        if (!accessToken) {
+          alert("Please login first.");
+          return;
+        }
+        try {
+          const response = await fetch(`${API_BASE}/places/`, {
+            headers: { Authorization: "Bearer " + accessToken },
+          });
+
+          if (!response.ok) {
+            const errData = await response.json();
+            alert("Failed to fetch places: " + JSON.stringify(errData));
+            return;
+          }
+
+          const data = await response.json();
+          console.log(data);
+
+          const list = document.getElementById("places-list");
+          list.innerHTML = "";
+          if (Array.isArray(data)) {
+            data.forEach((place) => {
+              const li = document.createElement("li");
+              li.textContent = `${place.name} - ${place.neighborhood}`;
+              list.appendChild(li);
+            });
+          } else {
+            list.innerHTML = "<li>No places found or error occurred.</li>";
+          }
+        } catch (err) {
+          console.error(err);
+          alert("Error fetching places: " + err);
+        }
+      }
+    </script>
+  </body>
+</html>
