@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.conf import settings
+import uuid
 
 
 # Base model for audit + soft delete
@@ -53,7 +54,7 @@ class Profile(AbstractUser, BaseModel):
 # Place Model
 # ---------------------------------------------------------------------
 class Place(BaseModel):
-    place_id = models.CharField(max_length=100, unique=True)
+    place_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     name = models.CharField(max_length=100)
     neighborhood = models.CharField(max_length=100, blank=True, null=True)
     cluster_label = models.IntegerField(blank=True, null=True)
