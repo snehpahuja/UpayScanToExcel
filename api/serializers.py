@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from .models import Place, Review, Badge, UserBadge
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 User = get_user_model()
 
@@ -67,7 +68,7 @@ class ReviewSerializer(BaseModelSerializer):
         fields = BaseModelSerializer.Meta.fields + [
             'id', 'user', 'place', 'rating', 'comment', 'summary'
         ]
-
+        read_only_fields = ['user']
 
 class BadgeSerializer(BaseModelSerializer):
     class Meta:
@@ -84,3 +85,12 @@ class UserBadgeSerializer(BaseModelSerializer):
             'id', 'user', 'badge', 'awarded_at', 'active'
         ]
 
+class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
+    def validate(self, attrs):
+        data = super().validate(attrs)
+        data.update({
+            "user_id": self.user.id,
+            "username": self.user.username,
+            "email": self.user.email,
+        })
+        return data

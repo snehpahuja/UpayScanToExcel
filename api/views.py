@@ -11,7 +11,8 @@ from .serializers import (
     ProfileSerializer, PlaceSerializer, ReviewSerializer,
     BadgeSerializer, UserBadgeSerializer
 )
-
+from rest_framework.permissions import IsAuthenticated
+from .serializers import CustomTokenObtainPairSerializer
 User = get_user_model()
 
 
@@ -50,12 +51,14 @@ class PlaceViewSet(BaseViewSet):
 # ------------------------------
 # Reviews
 # ------------------------------
-class ReviewViewSet(BaseViewSet):
-    queryset = Review.objects.select_related('user', 'place')
+class ReviewViewSet(viewsets.ModelViewSet):
+    queryset = Review.objects.all()
     serializer_class = ReviewSerializer
+    permission_classes = [IsAuthenticated]  # this line ensures only logged-in users can post/edit
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+    
 
 
 # ------------------------------
@@ -98,4 +101,5 @@ class SignupView(generics.CreateAPIView):
 # User Login (JWT)
 # ------------------------------
 class LoginView(TokenObtainPairView):
+    serializer_class = CustomTokenObtainPairSerializer
     permission_classes = [permissions.AllowAny]

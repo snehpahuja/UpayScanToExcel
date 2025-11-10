@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>API Test Frontend</title>
+    <title>API Full Test Frontend</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 20px;
       }
-      input {
+      input,
+      select {
         margin: 5px 0;
         display: block;
       }
@@ -20,38 +21,126 @@
       ul {
         padding-left: 20px;
       }
+      .section {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
-    <h1>API Test Frontend</h1>
+    <h1>Full API Test Frontend</h1>
 
-    <!-- Signup form -->
-    <h2>Signup</h2>
-    <input id="signup-username" placeholder="Username" />
-    <input id="signup-email" placeholder="Email" />
-    <input id="signup-password" type="password" placeholder="Password" />
-    <button onclick="signup()">Signup</button>
+    <!-- -------------------- AUTH -------------------- -->
+    <div class="section">
+      <h2>Signup</h2>
+      <input id="signup-username" placeholder="Username" />
+      <input id="signup-email" placeholder="Email" />
+      <input id="signup-password" type="password" placeholder="Password" />
+      <button onclick="signup()">Signup</button>
 
-    <!-- Login form -->
-    <h2>Login</h2>
-    <input id="login-username" placeholder="Username" />
-    <input id="login-password" type="password" placeholder="Password" />
-    <button onclick="login()">Login</button>
+      <h2>Login</h2>
+      <input id="login-username" placeholder="Username" />
+      <input id="login-password" type="password" />
+      <button onclick="login()">Login</button>
+    </div>
 
-    <!-- Places list -->
-    <h2>Places</h2>
-    <button onclick="getPlaces()">Get Places</button>
-    <ul id="places-list"></ul>
+    <!-- -------------------- PLACES -------------------- -->
+    <div class="section">
+      <h2>Places</h2>
+      <button onclick="getPlaces()">Get Places</button>
+      <ul id="places-list"></ul>
+
+      <h3>Create Place</h3>
+      <input id="place-name" placeholder="Name" />
+      <input id="place-neighborhood" placeholder="Neighborhood" />
+      <input id="place-lat" placeholder="Latitude" type="number" step="any" />
+      <input id="place-lon" placeholder="Longitude" type="number" step="any" />
+      <button onclick="createPlace()">Create Place</button>
+
+      <h3>Update/Delete Place</h3>
+      <input id="place-id" placeholder="Place ID" />
+      <input id="update-place-name" placeholder="New Name" />
+      <button onclick="updatePlace()">Update Place</button>
+      <button onclick="deletePlace()">Delete Place</button>
+    </div>
+
+    <!-- -------------------- REVIEWS -------------------- -->
+    <div class="section">
+      <h2>Reviews</h2>
+      <button onclick="getReviews()">Get Reviews</button>
+      <ul id="reviews-list"></ul>
+
+      <h3>Create Review</h3>
+      <input id="review-place-id" placeholder="Place ID" />
+      <input
+        id="review-rating"
+        placeholder="Rating"
+        type="number"
+        step="1"
+        min="1"
+        max="5"
+      />
+      <input id="review-comment" placeholder="Comment" />
+      <button onclick="createReview()">Create Review</button>
+
+      <h3>Update/Delete Review</h3>
+      <input id="review-id" placeholder="Review ID" />
+      <input id="update-review-rating" placeholder="New Rating" />
+      <input id="update-review-comment" placeholder="New Comment" />
+      <button onclick="updateReview()">Update Review</button>
+      <button onclick="deleteReview()">Delete Review</button>
+    </div>
+
+    <!-- -------------------- BADGES -------------------- -->
+    <div class="section">
+      <h2>Badges (Admin Only)</h2>
+      <button onclick="getBadges()">Get Badges</button>
+      <ul id="badges-list"></ul>
+
+      <h3>Create Badge</h3>
+      <input id="badge-title" placeholder="Title" />
+      <input id="badge-description" placeholder="Description" />
+      <input id="badge-points" placeholder="Points Required" type="number" />
+      <input id="badge-icon" placeholder="Icon URL" />
+      <button onclick="createBadge()">Create Badge</button>
+
+      <h3>Update/Delete Badge</h3>
+      <input id="badge-id" placeholder="Badge ID" />
+      <input id="update-badge-title" placeholder="New Title" />
+      <input id="update-badge-description" placeholder="New Description" />
+      <button onclick="updateBadge()">Update Badge</button>
+      <button onclick="deleteBadge()">Delete Badge</button>
+    </div>
+
+    <!-- -------------------- USER BADGES -------------------- -->
+    <div class="section">
+      <h2>User Badges (Admin Only)</h2>
+      <button onclick="getUserBadges()">Get User Badges</button>
+      <ul id="userbadges-list"></ul>
+
+      <h3>Assign Badge</h3>
+      <input id="userbadge-user-id" placeholder="User ID" />
+      <input id="userbadge-badge-id" placeholder="Badge ID" />
+      <button onclick="assignBadge()">Assign Badge</button>
+
+      <h3>Update/Delete User Badge</h3>
+      <input id="userbadge-id" placeholder="User Badge ID" />
+      <select id="userbadge-active">
+        <option value="true">Active</option>
+        <option value="false">Inactive</option>
+      </select>
+      <button onclick="updateUserBadge()">Update Status</button>
+      <button onclick="deleteUserBadge()">Delete</button>
+    </div>
 
     <script>
-      // Make sure this points to your Django backend
       const API_BASE = "http://127.0.0.1:8000/api";
-
       let accessToken = "";
 
       async function signup() {
         try {
-          const response = await fetch(`${API_BASE}/signup/`, {
+          const res = await fetch(`${API_BASE}/signup/`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -60,25 +149,18 @@
               password: document.getElementById("signup-password").value,
             }),
           });
-
-          if (!response.ok) {
-            const errData = await response.json();
-            alert("Signup failed: " + JSON.stringify(errData));
-            return;
-          }
-
-          const data = await response.json();
+          const data = await res.json();
           console.log(data);
-          alert("Signup successful. Check console for details.");
+          alert("Signup successful");
         } catch (err) {
           console.error(err);
-          alert("Signup error: " + err);
+          alert(err);
         }
       }
 
       async function login() {
         try {
-          const response = await fetch(`${API_BASE}/login/`, {
+          const res = await fetch(`${API_BASE}/login/`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -86,57 +168,233 @@
               password: document.getElementById("login-password").value,
             }),
           });
-
-          if (!response.ok) {
-            const errData = await response.json();
-            alert("Login failed: " + JSON.stringify(errData));
-            return;
-          }
-
-          const data = await response.json();
+          const data = await res.json();
           accessToken = data.access;
           console.log(data);
-          alert("Login successful. Token stored.");
+          alert("Login successful, token stored");
         } catch (err) {
           console.error(err);
-          alert("Login error: " + err);
+          alert(err);
         }
       }
 
+      function authHeader() {
+        return {
+          Authorization: "Bearer " + accessToken,
+          "Content-Type": "application/json",
+        };
+      }
+
+      // -------------------- PLACES --------------------
       async function getPlaces() {
-        if (!accessToken) {
-          alert("Please login first.");
-          return;
-        }
-        try {
-          const response = await fetch(`${API_BASE}/places/`, {
-            headers: { Authorization: "Bearer " + accessToken },
-          });
+        const res = await fetch(`${API_BASE}/places/`, {
+          headers: authHeader(),
+        });
+        const data = await res.json();
+        const list = document.getElementById("places-list");
+        list.innerHTML = "";
+        data.forEach((p) => {
+          const li = document.createElement("li");
+          li.textContent = `${p.id}: ${p.name} (${p.neighborhood})`;
+          list.appendChild(li);
+        });
+      }
 
-          if (!response.ok) {
-            const errData = await response.json();
-            alert("Failed to fetch places: " + JSON.stringify(errData));
-            return;
-          }
+      async function createPlace() {
+        const body = {
+          name: document.getElementById("place-name").value,
+          neighborhood: document.getElementById("place-neighborhood").value,
+          latitude: parseFloat(document.getElementById("place-lat").value),
+          longitude: parseFloat(document.getElementById("place-lon").value),
+        };
+        await fetch(`${API_BASE}/places/`, {
+          method: "POST",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getPlaces();
+      }
 
-          const data = await response.json();
-          console.log(data);
+      async function updatePlace() {
+        const id = document.getElementById("place-id").value;
+        const body = {
+          name: document.getElementById("update-place-name").value,
+        };
+        await fetch(`${API_BASE}/places/${id}/`, {
+          method: "PATCH",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getPlaces();
+      }
 
-          const list = document.getElementById("places-list");
-          list.innerHTML = "";
-          if (Array.isArray(data)) {
-            data.forEach((place) => {
-              const li = document.createElement("li");
-              li.textContent = `${place.name} - ${place.neighborhood}`;
-              list.appendChild(li);
-            });
-          } else {
-            list.innerHTML = "<li>No places found or error occurred.</li>";
-          }
-        } catch (err) {
-          console.error(err);
-          alert("Error fetching places: " + err);
-        }
+      async function deletePlace() {
+        const id = document.getElementById("place-id").value;
+        await fetch(`${API_BASE}/places/${id}/`, {
+          method: "DELETE",
+          headers: authHeader(),
+        });
+        getPlaces();
+      }
+
+      // -------------------- REVIEWS --------------------
+      async function getReviews() {
+        const res = await fetch(`${API_BASE}/reviews/`, {
+          headers: authHeader(),
+        });
+        const data = await res.json();
+        const list = document.getElementById("reviews-list");
+        list.innerHTML = "";
+        data.forEach((r) => {
+          const li = document.createElement("li");
+          li.textContent = `${r.id}: ${r.comment} (Rating: ${r.rating})`;
+          list.appendChild(li);
+        });
+      }
+
+      async function createReview() {
+        const body = {
+          place: parseInt(document.getElementById("review-place-id").value),
+          rating: parseInt(document.getElementById("review-rating").value),
+          comment: document.getElementById("review-comment").value,
+        };
+        await fetch(`${API_BASE}/reviews/`, {
+          method: "POST",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getReviews();
+      }
+
+      async function updateReview() {
+        const id = document.getElementById("review-id").value;
+        const body = {
+          rating: parseInt(
+            document.getElementById("update-review-rating").value
+          ),
+          comment: document.getElementById("update-review-comment").value,
+        };
+        await fetch(`${API_BASE}/reviews/${id}/`, {
+          method: "PATCH",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getReviews();
+      }
+
+      async function deleteReview() {
+        const id = document.getElementById("review-id").value;
+        await fetch(`${API_BASE}/reviews/${id}/`, {
+          method: "DELETE",
+          headers: authHeader(),
+        });
+        getReviews();
+      }
+
+      // -------------------- BADGES --------------------
+      async function getBadges() {
+        const res = await fetch(`${API_BASE}/badges/`, {
+          headers: authHeader(),
+        });
+        const data = await res.json();
+        const list = document.getElementById("badges-list");
+        list.innerHTML = "";
+        data.forEach((b) => {
+          const li = document.createElement("li");
+          li.textContent = `${b.id}: ${b.title} (${b.points_required} pts)`;
+          list.appendChild(li);
+        });
+      }
+
+      async function createBadge() {
+        const body = {
+          title: document.getElementById("badge-title").value,
+          description: document.getElementById("badge-description").value,
+          points_required: parseInt(
+            document.getElementById("badge-points").value
+          ),
+          icon_url: document.getElementById("badge-icon").value,
+        };
+        await fetch(`${API_BASE}/badges/`, {
+          method: "POST",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getBadges();
+      }
+
+      async function updateBadge() {
+        const id = document.getElementById("badge-id").value;
+        const body = {
+          title: document.getElementById("update-badge-title").value,
+          description: document.getElementById("update-badge-description")
+            .value,
+        };
+        await fetch(`${API_BASE}/badges/${id}/`, {
+          method: "PATCH",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getBadges();
+      }
+
+      async function deleteBadge() {
+        const id = document.getElementById("badge-id").value;
+        await fetch(`${API_BASE}/badges/${id}/`, {
+          method: "DELETE",
+          headers: authHeader(),
+        });
+        getBadges();
+      }
+
+      // -------------------- USER BADGES --------------------
+      async function getUserBadges() {
+        const res = await fetch(`${API_BASE}/userbadges/`, {
+          headers: authHeader(),
+        });
+        const data = await res.json();
+        const list = document.getElementById("userbadges-list");
+        list.innerHTML = "";
+        data.forEach((ub) => {
+          const li = document.createElement("li");
+          li.textContent = `${ub.id}: User ${ub.user} Badge ${ub.badge} Active: ${ub.active}`;
+          list.appendChild(li);
+        });
+      }
+
+      async function assignBadge() {
+        const body = {
+          user: parseInt(document.getElementById("userbadge-user-id").value),
+          badge: parseInt(document.getElementById("userbadge-badge-id").value),
+        };
+        await fetch(`${API_BASE}/userbadges/`, {
+          method: "POST",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getUserBadges();
+      }
+
+      async function updateUserBadge() {
+        const id = document.getElementById("userbadge-id").value;
+        const body = {
+          active: document.getElementById("userbadge-active").value === "true",
+        };
+        await fetch(`${API_BASE}/userbadges/${id}/`, {
+          method: "PATCH",
+          headers: authHeader(),
+          body: JSON.stringify(body),
+        });
+        getUserBadges();
+      }
+
+      async function deleteUserBadge() {
+        const id = document.getElementById("userbadge-id").value;
+        await fetch(`${API_BASE}/userbadges/${id}/`, {
+          method: "DELETE",
+          headers: authHeader(),
+        });
+        getUserBadges();
       }
     </script>
   </body>
