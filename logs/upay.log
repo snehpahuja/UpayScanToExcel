@@ -1,0 +1,14 @@
+INFO 2025-11-18 12:46:46,474 autoreload Watching for file changes with StatReloader
+INFO 2025-11-18 12:46:52,063 basehttp "GET / HTTP/1.1" 200 889
+WARNING 2025-11-18 12:46:52,336 log Not Found: /favicon.ico
+WARNING 2025-11-18 12:46:52,336 basehttp "GET /favicon.ico HTTP/1.1" 404 3739
+INFO 2025-11-18 12:49:26,552 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-18 12:49:27,114 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-11-18 12:49:27,116 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-11-18 12:49:27,154 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-11-18 12:49:27,163 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+INFO 2025-11-18 12:49:27,187 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-11-18 12:49:27,225 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-11-18 12:49:27,308 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-11-18 12:49:27,496 basehttp "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2025-11-18 12:49:27,875 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78429
