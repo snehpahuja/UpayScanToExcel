@@ -12,3 +12,392 @@ INFO 2025-11-18 12:49:27,225 basehttp "GET /static/drf-yasg/immutable.min.js HTT
 INFO 2025-11-18 12:49:27,308 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
 INFO 2025-11-18 12:49:27,496 basehttp "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
 INFO 2025-11-18 12:49:27,875 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78429
+INFO 2025-11-23 14:52:06,234 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 14:52:11,805 basehttp "GET / HTTP/1.1" 200 889
+WARNING 2025-11-23 14:52:12,106 log Not Found: /favicon.ico
+WARNING 2025-11-23 14:52:12,107 basehttp "GET /favicon.ico HTTP/1.1" 404 3739
+INFO 2025-11-23 14:52:18,255 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 14:52:18,782 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-11-23 14:52:18,828 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-11-23 14:52:18,843 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+INFO 2025-11-23 14:52:18,847 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-11-23 14:52:18,876 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-11-23 14:52:18,918 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-11-23 14:52:19,062 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-11-23 14:52:19,677 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+WARNING 2025-11-23 14:52:56,340 log Unauthorized: /api/login/
+WARNING 2025-11-23 14:52:56,341 basehttp "POST /api/login/ HTTP/1.1" 401 63
+WARNING 2025-11-23 14:53:15,293 log Unauthorized: /api/login/
+WARNING 2025-11-23 14:53:15,295 basehttp "POST /api/login/ HTTP/1.1" 401 63
+WARNING 2025-11-23 14:55:06,838 log Unauthorized: /api/signup/
+WARNING 2025-11-23 14:55:06,840 basehttp "POST /api/signup/ HTTP/1.1" 401 58
+INFO 2025-11-23 14:57:31,820 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 14:57:34,551 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:05:50,128 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:06:03,292 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:06:07,860 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:06:08,301 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+WARNING 2025-11-23 15:15:34,420 log Bad Request: /api/signup/
+WARNING 2025-11-23 15:15:34,422 basehttp "POST /api/signup/ HTTP/1.1" 400 65
+WARNING 2025-11-23 15:15:48,152 log Bad Request: /api/signup/
+WARNING 2025-11-23 15:15:48,154 basehttp "POST /api/signup/ HTTP/1.1" 400 65
+INFO 2025-11-23 15:26:11,805 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:26:17,277 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:26:33,031 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:26:33,569 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+INFO 2025-11-23 15:31:57,360 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:31:59,792 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:33:06,705 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:33:08,854 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:33:38,152 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:33:39,940 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:33:40,285 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+INFO 2025-11-23 15:34:01,261 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:34:03,746 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:34:08,448 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:34:10,108 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:34:10,497 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+INFO 2025-11-23 15:34:32,524 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:34:35,043 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:34:52,222 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:34:53,815 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:34:54,135 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+INFO 2025-11-23 15:35:40,923 basehttp "POST /api/login/ HTTP/1.1" 200 636
+WARNING 2025-11-23 15:36:30,085 log Bad Request: /api/upload/files/
+WARNING 2025-11-23 15:36:30,086 basehttp "POST /api/upload/files/ HTTP/1.1" 400 29
+INFO 2025-11-23 15:38:18,608 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:38:22,695 basehttp "GET / HTTP/1.1" 200 889
+WARNING 2025-11-23 15:38:33,660 log Unauthorized: /api/upload/files/
+WARNING 2025-11-23 15:38:33,662 basehttp "GET /api/upload/files/ HTTP/1.1" 401 3911
+INFO 2025-11-23 15:38:33,935 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2025-11-23 15:38:33,975 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-11-23 15:38:33,976 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2025-11-23 15:38:34,021 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2025-11-23 15:38:34,029 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-11-23 15:38:34,057 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-11-23 15:38:34,081 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-11-23 15:38:34,105 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-11-23 15:38:34,107 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-11-23 15:38:34,131 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-11-23 15:38:34,160 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2025-11-23 15:38:43,556 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:38:44,081 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+INFO 2025-11-23 15:40:06,353 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:41:10,028 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:41:12,214 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:41:12,638 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+INFO 2025-11-23 15:42:29,954 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:42:31,644 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:42:32,169 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 78382
+INFO 2025-11-23 15:42:54,516 basehttp "POST /api/login/ HTTP/1.1" 200 636
+INFO 2025-11-23 15:46:06,834 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:46:09,039 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:47:31,386 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:47:34,361 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:48:05,880 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:48:07,781 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:48:16,873 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:48:26,355 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+ERROR 2025-11-23 15:48:27,500 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 36, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\drf_yasg\inspectors\view.py", line 166, in add_manual_parameters
+    raise SwaggerGenerationError("cannot add form parameters when the request has a request body; "
+                                 "did you forget to set an appropriate parser class on the view?")
+drf_yasg.errors.SwaggerGenerationError: cannot add form parameters when the request has a request body; did you forget to set an appropriate parser class on the view?
+ERROR 2025-11-23 15:48:27,523 basehttp "GET /swagger/?format=openapi HTTP/1.1" 500 156647
+INFO 2025-11-23 15:50:37,862 autoreload C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py changed, reloading.
+INFO 2025-11-23 15:50:40,272 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 15:51:33,325 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 15:51:35,229 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 15:51:35,554 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 79006
+INFO 2025-11-23 15:52:14,966 basehttp "POST /api/login/ HTTP/1.1" 200 636
+INFO 2025-11-23 16:03:51,007 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 16:03:54,123 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 16:04:00,625 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-23 16:04:00,787 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2025-11-23 16:04:00,961 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-11-23 16:04:00,972 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-11-23 16:04:00,973 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-11-23 16:04:00,979 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-11-23 16:04:00,980 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-11-23 16:04:00,992 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-11-23 16:04:01,006 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-11-23 16:04:10,837 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-11-23 16:04:11,042 basehttp "GET /admin/ HTTP/1.1" 200 16828
+INFO 2025-11-23 16:04:11,086 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-11-23 16:04:11,112 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-11-23 16:04:11,112 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-11-23 16:04:14,575 basehttp "GET /admin/api/category/ HTTP/1.1" 200 16987
+INFO 2025-11-23 16:04:14,624 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-11-23 16:04:14,637 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-23 16:04:14,641 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-23 16:04:14,653 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-23 16:04:14,657 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-23 16:04:14,666 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-23 16:04:14,672 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-23 16:04:14,676 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-11-23 16:04:14,694 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-23 16:04:14,732 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-23 16:04:14,754 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-11-23 16:04:14,794 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-23 16:04:14,818 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-11-23 16:04:14,818 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-11-23 16:05:07,844 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 16:05:12,644 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 16:05:17,983 basehttp "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2025-11-23 16:05:18,358 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 79006
+INFO 2025-11-23 16:05:58,197 basehttp "POST /api/login/ HTTP/1.1" 200 636
+ERROR 2025-11-23 16:07:04,017 log Internal Server Error: /api/upload/files/
+Traceback (most recent call last):
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.ForeignKeyViolation: insert or update on table "api_document" violates foreign key constraint "api_document_category_id_d2193570_fk_api_category_id"
+DETAIL:  Key (category_id)=(2) is not present in table "api_category".
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\api\views.py", line 245, in post
+    document = Document.objects.create(
+        original_filename=file.name,
+    ...<6 lines>...
+        status='uploaded'
+    )
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: insert or update on table "api_document" violates foreign key constraint "api_document_category_id_d2193570_fk_api_category_id"
+DETAIL:  Key (category_id)=(2) is not present in table "api_category".
+ERROR 2025-11-23 16:07:04,030 basehttp "POST /api/upload/files/ HTTP/1.1" 500 30263
+INFO 2025-11-23 16:07:28,449 autoreload Watching for file changes with StatReloader
+INFO 2025-11-23 16:07:36,466 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-11-23 16:07:38,574 basehttp "GET /admin/ HTTP/1.1" 200 16828
+INFO 2025-11-23 16:07:41,134 basehttp "GET /admin/api/category/add/ HTTP/1.1" 200 26432
+INFO 2025-11-23 16:07:41,261 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-23 16:07:41,298 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-11-23 16:07:41,309 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-11-23 16:07:41,312 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-11-23 16:07:41,312 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-11-23 16:07:41,318 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-11-23 16:07:41,334 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-11-23 16:07:41,345 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-11-23 16:07:41,390 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-11-23 16:07:41,390 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-11-23 16:08:02,232 basehttp "POST /admin/api/category/add/ HTTP/1.1" 200 26946
+INFO 2025-11-23 16:08:02,327 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-11-23 16:47:44,319 log Internal Server Error: /api/dashboard/attendance/
+Traceback (most recent call last):
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django_ratelimit\decorators.py", line 19, in _wrapped
+    ratelimited = is_ratelimited(request=request, group=group, fn=fn,
+                                 key=key, rate=rate, method=method,
+                                 increment=True)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django_ratelimit\core.py", line 153, in is_ratelimited
+    usage = get_usage(request, group, fn, key, rate, method, increment)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django_ratelimit\core.py", line 231, in get_usage
+    added = cache.add(cache_key, initial_value, period + EXPIRATION_FUDGE)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\cache\backends\redis.py", line 184, in add
+    return self._cache.add(key, value, self.get_backend_timeout(timeout))
+           ^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-11-23 16:48:53,334 log Internal Server Error: /api/dashboard/attendance/
+Traceback (most recent call last):
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+        lambda: self._connect(), lambda error: self.disconnect(error)
+    )
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\retry.py", line 116, in call_with_retry
+    return do()
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ~~~~~~~~~~~~~^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\connection.py", line 1306, in _connect
+    raise err
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django_ratelimit\decorators.py", line 19, in _wrapped
+    ratelimited = is_ratelimited(request=request, group=group, fn=fn,
+                                 key=key, rate=rate, method=method,
+                                 increment=True)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django_ratelimit\core.py", line 153, in is_ratelimited
+    usage = get_usage(request, group, fn, key, rate, method, increment)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django_ratelimit\core.py", line 231, in get_usage
+    added = cache.add(cache_key, initial_value, period + EXPIRATION_FUDGE)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\cache\backends\redis.py", line 184, in add
+    return self._cache.add(key, value, self.get_backend_timeout(timeout))
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\django\core\cache\backends\redis.py", line 96, in add
+    return bool(client.set(key, value, ex=timeout, nx=True))
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\utils.py", line 417, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\commands\core.py", line 2518, in set
+    return self.execute_command("SET", *pieces, **options)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\connection.py", line 2603, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sneh Pahuja\OneDrive\Desktop\flame\upay\UpayScanToExcel\venv\Lib\site-packages\redis\connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+WARNING 2025-11-23 17:10:25,760 log Unauthorized: /api/dashboard/attendance/

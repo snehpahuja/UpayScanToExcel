@@ -6,10 +6,18 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from django.contrib.auth import get_user_model
+from rest_framework.parsers import MultiPartParser, FormParser
 from django.db.models import Count, Avg, Sum, Q, F
 from django.utils import timezone
 from datetime import timedelta
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+from django.http import HttpResponse
+from .excel_generator import ExcelGenerator
+
+
 import uuid
+from .ocr.mock_processor import MockOCRProcessor
 
 from .models import (
     Center, Document, ProcessingQueue, ExtractedData,
@@ -67,7 +75,7 @@ class SignupView(generics.CreateAPIView):
     User signup - only admins can create new users
     """
     serializer_class = UserSignupSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.AllowAny]
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -156,6 +164,8 @@ class UserViewSet(BaseViewSet):
     serializer_class = UserSerializer
 
     def get_queryset(self):
+        if getattr(self, 'swagger_fake_view', False):
+            return User.objects.none()
         user = self.request.user
         if user.role == 'admin':
             return User.objects.all()
@@ -182,25 +192,36 @@ class CenterViewSet(BaseViewSet):
 # =====================================================
 # DOCUMENT UPLOAD
 # =====================================================
-
+#@method_decorator(ratelimit(key='user', rate='100/h', method='POST'), name='dispatch')
 class DocumentUploadView(APIView):
-    """
-    Multi-file upload endpoint
-    POST /upload/files/
-    """
     permission_classes = [permissions.IsAuthenticated]
-
+    parser_classes = [MultiPartParser, FormParser]
+    @swagger_auto_schema(
+        manual_parameters=[
+            openapi.Parameter(
+                name='files',
+                in_=openapi.IN_FORM,
+                type=openapi.TYPE_FILE,
+                required=True,
+                description='Upload one or more files',
+                multiple=True
+            ),
+            openapi.Parameter(
+                name='category',
+                in_=openapi.IN_FORM,
+                type=openapi.TYPE_INTEGER,
+                required=False,
+                description='Category ID'
+            ),
+        ]
+    )
+    
     def post(self, request):
         files = request.FILES.getlist('files')
         category_id = request.data.get('category')
-        city_id = request.data.get('city')
-        center_id = request.data.get('assigned_center')
         
         if not files:
-            return Response(
-                {"error": "No files provided"},
-                status=status.HTTP_400_BAD_REQUEST
-            )
+            return Response({"error": "No files provided"}, status=400)
         
         uploaded_documents = []
         
@@ -210,27 +231,40 @@ class DocumentUploadView(APIView):
             if file_ext not in ['pdf', 'jpg', 'jpeg', 'png']:
                 continue
             
-            # Create document record
+            # Save file
             stored_filename = f"{uuid.uuid4()}.{file_ext}"
+            file_path = f"media/uploads/documents/{stored_filename}"
+            
+            # Create directory if not exists
+            import os
+            os.makedirs('media/uploads/documents', exist_ok=True)
+            
+            # Save file to disk
+            with open(file_path, 'wb+') as destination:
+                for chunk in file.chunks():
+                    destination.write(chunk)
+            
+            # Create document record
             document = Document.objects.create(
                 original_filename=file.name,
                 stored_filename=stored_filename,
-                file_path=f"uploads/{stored_filename}",
-                file_size=file.size / (1024 * 1024),  # MB
+                file_path=file_path,
+                file_size=file.size / (1024 * 1024),
                 file_type=file_ext if file_ext != 'jpeg' else 'jpg',
                 uploader=request.user,
                 category_id=category_id if category_id else None,
-                city_id=city_id if city_id else None,
-                assigned_center_id=center_id if center_id else None,
                 status='uploaded'
             )
             
-            # Add to processing queue
-            ProcessingQueue.objects.create(
+            # Add to processing queue and process immediately
+            queue = ProcessingQueue.objects.create(
                 document=document,
                 status='queued',
                 priority=0
             )
+            
+            # Process with mock OCR
+            self._process_document_mock(document, queue)
             
             uploaded_documents.append(document)
         
@@ -243,10 +277,66 @@ class DocumentUploadView(APIView):
         
         serializer = DocumentListSerializer(uploaded_documents, many=True)
         return Response({
-            "message": f"{len(uploaded_documents)} documents uploaded successfully",
+            "message": f"{len(uploaded_documents)} documents uploaded and processed",
             "documents": serializer.data
-        }, status=status.HTTP_201_CREATED)
-
+        }, status=201)
+    
+    def _process_document_mock(self, document, queue):
+        """Process document with mock OCR"""
+        try:
+            # Update queue status
+            queue.status = 'processing'
+            queue.progress_percent = 0
+            queue.save()
+            
+            # Get category
+            if not document.category:
+                queue.status = 'failed'
+                queue.error_log = 'No category assigned'
+                queue.save()
+                document.status = 'error'
+                document.save()
+                return
+            
+            # Process with mock OCR
+            extracted_fields = MockOCRProcessor.process_document(
+                document, 
+                document.category
+            )
+            
+            # Save extracted data
+            for field_data in extracted_fields:
+                # Determine validation status
+                if field_data['confidence_score'] < 70:
+                    validation_status = 'invalid'
+                else:
+                    validation_status = 'passed'
+                
+                ExtractedData.objects.create(
+                    document=document,
+                    field_name=field_data['field_name'],
+                    field_value=field_data['field_value'],
+                    confidence_score=field_data['confidence_score'],
+                    field_position=field_data.get('field_position', ''),
+                    validation_status=validation_status
+                )
+            
+            # Update status
+            queue.status = 'completed'
+            queue.progress_percent = 100
+            queue.completed_at = timezone.now()
+            queue.save()
+            
+            document.status = 'review_pending'
+            document.save()
+            
+        except Exception as e:
+            queue.status = 'failed'
+            queue.error_log = str(e)
+            queue.save()
+            
+            document.status = 'error'
+            document.save()
 
 class BulkDocumentUploadView(DocumentUploadView):
     """
@@ -297,6 +387,8 @@ class DocumentViewSet(BaseViewSet):
     serializer_class = DocumentListSerializer
 
     def get_queryset(self):
+        if getattr(self, 'swagger_fake_view', False):
+            return User.objects.none()
         queryset = Document.objects.filter(is_deleted=False)
         
         user = self.request.user
@@ -339,6 +431,8 @@ class DocumentReviewViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = DocumentWithExtractedDataSerializer
 
     def get_queryset(self):
+        if getattr(self, 'swagger_fake_view', False):
+            return User.objects.none()
         queryset = Document.objects.filter(is_deleted=False)
         
         user = self.request.user
@@ -708,7 +802,7 @@ class FinancialViewSet(BaseViewSet):
 # =====================================================
 # DASHBOARD ANALYTICS
 # =====================================================
-
+#@method_decorator(ratelimit(key='user', rate='500/h', method='GET'), name='dispatch')
 class AttendanceDashboardView(APIView):
     """
     GET /dashboard/attendance/?center_id=X&date_range=YYYY-MM-DD,YYYY-MM-DD&user_id=X
@@ -1180,3 +1274,52 @@ class CategoryViewSet(BaseViewSet):
         if self.action in ['create', 'update', 'partial_update', 'destroy']:
             return [permissions.IsAdminUser()]
         return [permissions.IsAuthenticated()]
+    
+    
+
+class ExcelDownloadView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        document_ids = request.query_params.getlist('document_ids[]')
+        
+        if not document_ids:
+            return Response({"error": "document_ids required"}, status=400)
+        
+        # For simplicity, handle one document at a time
+        document_id = document_ids[0]
+        
+        try:
+            document = Document.objects.get(id=document_id, status='approved')
+            
+            # Check permission
+            if request.user.role != 'admin' and document.uploader != request.user:
+                return Response({"error": "Permission denied"}, status=403)
+            
+            # Get extracted data
+            extracted_data = ExtractedData.objects.filter(document=document)
+            
+            # Generate Excel
+            excel_file = ExcelGenerator.generate_excel(document, extracted_data)
+            
+            # Log activity
+            ActivityLog.objects.create(
+                user=request.user,
+                action='download',
+                document=document
+            )
+            
+            # Return file
+            response = HttpResponse(
+                excel_file.read(),
+                content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            )
+            response['Content-Disposition'] = f'attachment; filename="{document.original_filename}.xlsx"'
+            
+            return response
+            
+        except Document.DoesNotExist:
+            return Response({"error": "Document not found or not approved"}, status=404)
+        
+        
+  
