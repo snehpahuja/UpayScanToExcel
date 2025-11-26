@@ -65,3 +65,6 @@ django-extensions==3.2.3
 
 # Fake Data Generation (optional)
 Faker==22.0.0
+
+psycopg[binary]>=3.1
+
