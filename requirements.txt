@@ -3,6 +3,7 @@
 # Minimal Requirements (No Compilation Issues)
 # Python 3.9+
 # ==========================================
+google-cloud-documentai
 
 # Core Django
 Django==5.2.7
