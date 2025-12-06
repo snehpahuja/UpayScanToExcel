@@ -1,0 +1,329 @@
+from rest_framework import viewsets, permissions, status, generics
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import TokenObtainPairView
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from django.contrib.auth import get_user_model
+from rest_framework.parsers import MultiPartParser, FormParser
+from django.db.models import Count, Avg, Sum, Q, F
+from django.utils import timezone
+from datetime import timedelta
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+from django.http import HttpResponse
+from .excel_generator import ExcelGenerator
+from rest_framework import permissions as drf_permissions
+
+
+import uuid
+from .ocr.mock_processor import MockOCRProcessor
+
+from .models import (
+    Center, Document, ProcessingQueue, ExtractedData,
+    Category, UserPermissions, ActivityLog, Student,
+    Attendance, Grade, StoreItem, StoreRequisition,
+    StoreReceivement, Visitor, Activity, Financial, Session
+)
+from .serializers import (
+    UserSerializer, UserSignupSerializer, CustomTokenObtainPairSerializer,
+    SessionSerializer, CenterSerializer, CategorySerializer,
+    DocumentListSerializer, DocumentDetailSerializer, DocumentUploadSerializer,
+    DocumentWithExtractedDataSerializer, ProcessingQueueSerializer,
+    ExtractedDataSerializer, ExtractedDataUpdateSerializer,
+    UserPermissionsSerializer, ActivityLogSerializer,
+    StudentSerializer, AttendanceSerializer, GradeSerializer,
+    StoreItemSerializer, StoreRequisitionSerializer, StoreReceivementSerializer,
+    VisitorSerializer, ActivitySerializer, FinancialSerializer,
+    AttendanceStatisticsSerializer, GradeStatisticsSerializer,
+    EnrollmentStatisticsSerializer, FinancialStatisticsSerializer,
+    RequisitionComparisonSerializer, VisitorStatisticsSerializer
+)
+
+# Add this with your other imports
+from .analytics import (
+    StudentPerformanceAnalytics,
+    StudentFlaggingAnalytics,
+    EnrollmentAnalytics,
+    CenterActivityAnalytics,
+    FinancialAnalytics,
+    StoreRequisitionAnalytics,
+    VisitorAnalytics,
+    DocumentProcessingAnalytics
+)
+
+
+
+User = get_user_model()
+
+
+# =====================================================
+# Base ViewSet (shared config)
+# =====================================================
+class BaseViewSet(viewsets.ModelViewSet):
+    """Applies global authentication and permission logic."""
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [drf_permissions.AllowAny]
+
+
+
+# =====================================================
+# AUTHENTICATION & USER MANAGEMENT
+# =====================================================
+
+class SignupView(generics.CreateAPIView):
+    """
+    User signup - only admins can create new users
+    """
+    serializer_class = UserSignupSerializer
+    permission_classes = [permissions.AllowAny]
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        
+        # Log the activity
+        ActivityLog.objects.create(
+            user=request.user,
+            action='create_user',
+            details=f"Created user: {user.username}"
+        )
+        
+        return Response({
+            "user": UserSerializer(user).data,
+            "message": "User created successfully. Temporary password sent to email."
+        }, status=status.HTTP_201_CREATED)
+
+
+class LoginView(TokenObtainPairView):
+    """
+    User login with JWT tokens
+    """
+    serializer_class = CustomTokenObtainPairSerializer
+    permission_classes = [permissions.AllowAny]
+
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        
+        if response.status_code == 200:
+            user = User.objects.get(username=request.data.get('username'))
+            
+            # Create session
+            session_id = str(uuid.uuid4())
+            expires_at = timezone.now() + timedelta(minutes=30)
+            Session.objects.create(
+                session_id=session_id,
+                user=user,
+                expires_at=expires_at,
+                is_active=True
+            )
+            
+            # Log the activity
+            ActivityLog.objects.create(
+                user=user,
+                action='login'
+            )
+            
+            response.data['session_id'] = session_id
+        
+        return response
+
+
+class UserProfileView(APIView):
+    """
+    Get current user's profile
+    """
+    permission_classes = [drf_permissions.AllowAny]
+
+    def get(self, request):
+        serializer = UserSerializer(request.user)
+        
+        # Get user's document count
+        document_count = Document.objects.filter(
+            uploader=request.user,
+            is_deleted=False
+        ).count()
+        
+        data = serializer.data
+        data['document_count'] = document_count
+        
+        return Response(data)
+
+    def patch(self, request):
+        serializer = UserSerializer(request.user, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+
+
+class UserViewSet(BaseViewSet):
+    """
+    User management viewset
+    """
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+    def get_queryset(self):
+        if getattr(self, 'swagger_fake_view', False):
+            return User.objects.none()
+        user = self.request.user
+        if user.role == 'admin':
+            return User.objects.all()
+        return User.objects.filter(id=user.id)
+
+
+# =====================================================
+# CENTER MANAGEMENT
+# =====================================================
+
+class CenterViewSet(BaseViewSet):
+    """
+    Center CRUD operations
+    """
+    queryset = Center.objects.filter(is_deleted=False)
+    serializer_class = CenterSerializer
+
+    def get_permissions(self):
+        if self.action in ['create', 'update', 'partial_update', 'destroy']:
+            return [permissions.IsAdminUser()]
+        return [permissions.IsAuthenticated()]
+
+
+# =====================================================
+# DOCUMENT UPLOAD
+# =====================================================
+#@method_decorator(ratelimit(key='user', rate='100/h', method='POST'), name='dispatch')
+
+class DocumentUploadView(APIView):
+    """
+    Minimal development upload endpoint.
+    Saves uploaded files into media/uploads/documents and returns a JSON response.
+    This implementation is intentionally simple to avoid touching models or queues,
+    and is safe for local development only.
+    """
+    permission_classes = [drf_permissions.AllowAny]
+    parser_classes = [MultiPartParser, FormParser]
+
+    def post(self, request):
+        files = request.FILES.getlist('files')
+        category_id = request.data.get('category')
+
+        if not files:
+            return Response({"error": "No files provided"}, status=400)
+
+        saved = []
+        import os, uuid
+        os.makedirs('media/uploads/documents', exist_ok=True)
+
+        for f in files:
+            fname = f.name
+            ext = fname.split('.')[-1].lower()
+            if ext not in ['pdf', 'jpg', 'jpeg', 'png']:
+                # skip unsupported
+                continue
+            stored = f"{uuid.uuid4()}.{ext}"
+            path = os.path.join('media', 'uploads', 'documents', stored)
+            with open(path, 'wb+') as dest:
+                for chunk in f.chunks():
+                    dest.write(chunk)
+            saved.append({"original_filename": fname, "stored_filename": stored, "file_path": path})
+
+        return Response({
+            "message": f"{len(saved)} file(s) saved (dev-only).",
+            "saved_files": saved,
+            "category_received": category_id
+        }, status=201)
+
+    def _process_document_mock(self, document, queue):
+        """Process document with mock OCR"""
+        try:
+            # Update queue status
+            queue.status = 'processing'
+            queue.progress_percent = 0
+            queue.save()
+            
+            # Get category
+            if not document.category:
+                queue.status = 'failed'
+                queue.error_log = 'No category assigned'
+                queue.save()
+                document.status = 'error'
+                document.save()
+                return
+            
+            # Process with mock OCR
+            extracted_fields = MockOCRProcessor.process_document(
+                document, 
+                document.category
+            )
+            
+            # Save extracted data
+            for field_data in extracted_fields:
+                # Determine validation status
+                if field_data['confidence_score'] < 70:
+                    validation_status = 'invalid'
+                else:
+                    validation_status = 'passed'
+                
+                ExtractedData.objects.create(
+                    document=document,
+                    field_name=field_data['field_name'],
+                    field_value=field_data['field_value'],
+                    confidence_score=field_data['confidence_score'],
+                    field_position=field_data.get('field_position', ''),
+                    validation_status=validation_status
+                )
+            
+            # Update status
+            queue.status = 'completed'
+            queue.progress_percent = 100
+            queue.completed_at = timezone.now()
+            queue.save()
+            
+            document.status = 'review_pending'
+            document.save()
+            
+        except Exception as e:
+            queue.status = 'failed'
+            queue.error_log = str(e)
+            queue.save()
+            
+            document.status = 'error'
+            document.save()
+
+class BulkDocumentUploadView(DocumentUploadView):
+    """
+    Bulk upload endpoint (same as multi-file upload)
+    POST /upload/bulk/
+    """
+    pass
+
+
+class DocumentCategorizationView(APIView):
+    """
+    Assign category to uploaded documents
+    POST /upload/categorize/
+    """
+    permission_classes = [drf_permissions.AllowAny]
+
+    def post(self, request):
+        files = request.FILES.getlist('files')
+        category_id = request.data.get('category')
+
+        if not files:
+            return Response({"error": "No files provided"}, status=400)
+
+        uploaded_documents = []
+
+        # determine uploader: use request.user when authenticated,
+        # otherwise fall back to a local superuser (create one if none exists)
+        if getattr(request, 'user', None) and request.user.is_authenticated:
+            uploader_user = request.user
+        else:
+            uploader_user = User.objects.filter(is_superuser=True).first()
+            if not uploader_user:
+                uploader_user = User.objects.create(username='local_dev_admin', is_staff=True, is_superuser=True)
+                uploader_user.set_unusable_password()
+                uploader_user.save()

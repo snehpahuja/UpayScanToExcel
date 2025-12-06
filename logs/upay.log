@@ -401,3 +401,909 @@ Traceback (most recent call last):
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
 WARNING 2025-11-23 17:10:25,760 log Unauthorized: /api/dashboard/attendance/
+INFO 2025-12-01 02:04:53,392 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 02:05:56,653 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-01 02:05:56,678 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2025-12-01 02:05:56,715 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-12-01 02:05:56,723 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-12-01 02:05:56,723 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-12-01 02:05:56,723 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-12-01 02:05:56,724 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-12-01 02:05:56,724 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-12-01 02:05:56,845 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-12-01 02:05:56,941 log Not Found: /favicon.ico
+WARNING 2025-12-01 02:05:56,942 basehttp "GET /favicon.ico HTTP/1.1" 404 3739
+INFO 2025-12-01 02:06:06,762 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-01 02:06:06,776 basehttp "GET /admin/ HTTP/1.1" 200 16829
+INFO 2025-12-01 02:06:06,795 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-12-01 02:06:06,796 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-12-01 02:06:06,797 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-12-01 02:06:12,640 basehttp "GET /admin/api/activity/add/ HTTP/1.1" 200 28350
+INFO 2025-12-01 02:06:12,664 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-12-01 02:06:12,667 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-01 02:06:12,671 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-12-01 02:06:12,672 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-12-01 02:06:12,673 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-12-01 02:06:12,677 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-01 02:06:12,678 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-12-01 02:06:12,679 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-12-01 02:06:12,682 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-12-01 02:06:12,683 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-01 02:06:12,684 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-12-01 02:06:12,685 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:06:12,686 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-12-01 02:06:12,688 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-12-01 02:06:12,690 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-12-01 02:06:12,696 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-12-01 02:06:12,696 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-12-01 02:06:12,733 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-12-01 02:06:12,734 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-12-01 02:12:43,170 basehttp "GET /admin/api/session/ HTTP/1.1" 200 17765
+INFO 2025-12-01 02:12:43,195 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,196 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,198 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,198 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,200 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-12-01 02:12:43,200 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,200 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,202 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,204 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,206 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,206 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,207 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,208 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,209 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:43,211 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-12-01 02:12:43,218 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,218 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-12-01 02:12:43,222 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,223 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:43,223 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-12-01 02:12:45,363 basehttp "GET /admin/api/attendance/ HTTP/1.1" 200 17134
+INFO 2025-12-01 02:12:45,392 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:47,203 basehttp "GET /admin/api/activity/ HTTP/1.1" 200 17269
+INFO 2025-12-01 02:12:47,232 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:48,746 basehttp "GET /admin/api/extracteddata/ HTTP/1.1" 200 17556
+INFO 2025-12-01 02:12:48,770 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:49,586 basehttp "GET /admin/api/financial/ HTTP/1.1" 200 16921
+INFO 2025-12-01 02:12:49,617 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:50,235 basehttp "GET /admin/api/grade/ HTTP/1.1" 200 16955
+INFO 2025-12-01 02:12:50,262 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:51,883 basehttp "GET /admin/api/storereceivement/ HTTP/1.1" 200 17088
+INFO 2025-12-01 02:12:51,912 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:52,335 basehttp "GET /admin/api/storerequisition/ HTTP/1.1" 200 17493
+INFO 2025-12-01 02:12:52,360 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:55,454 basehttp "GET /admin/api/student/ HTTP/1.1" 200 16856
+INFO 2025-12-01 02:12:55,481 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:12:58,733 basehttp "GET /admin/ HTTP/1.1" 200 16829
+INFO 2025-12-01 02:12:58,755 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:12:58,759 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 02:13:02,302 basehttp "GET /admin/api/financial/ HTTP/1.1" 200 16921
+INFO 2025-12-01 02:13:02,329 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:44:00,146 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-01 02:44:25,913 log Unauthorized: /api/documents/upload/
+WARNING 2025-12-01 02:44:25,914 basehttp "POST /api/documents/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-01 02:44:26,863 log Unauthorized: /api/documents/upload/
+WARNING 2025-12-01 02:44:26,864 basehttp "POST /api/documents/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-01 02:44:58,655 log Unauthorized: /api/documents/upload/
+WARNING 2025-12-01 02:44:58,656 basehttp "GET /api/documents/upload/ HTTP/1.1" 401 5410
+INFO 2025-12-01 02:44:58,731 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2025-12-01 02:44:58,732 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-12-01 02:44:58,732 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-12-01 02:44:58,733 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2025-12-01 02:44:58,735 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2025-12-01 02:44:58,736 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-12-01 02:44:58,737 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-12-01 02:44:58,738 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-12-01 02:44:58,738 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2025-12-01 02:44:58,738 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-12-01 02:44:58,742 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-12-01 02:46:26,950 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 02:46:59,083 basehttp "GET / HTTP/1.1" 200 889
+WARNING 2025-12-01 02:46:59,202 log Not Found: /favicon.ico
+WARNING 2025-12-01 02:46:59,203 basehttp "GET /favicon.ico HTTP/1.1" 404 3737
+INFO 2025-12-01 02:47:03,938 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-01 02:47:03,962 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4180
+INFO 2025-12-01 02:47:03,977 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-12-01 02:47:03,980 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-12-01 02:47:03,982 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-12-01 02:47:03,982 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-12-01 02:47:03,982 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-12-01 02:47:03,983 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-12-01 02:47:03,985 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-12-01 02:47:09,184 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4345
+INFO 2025-12-01 02:47:16,346 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-01 02:47:16,359 basehttp "GET /admin/ HTTP/1.1" 200 16829
+INFO 2025-12-01 02:47:16,377 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-12-01 02:47:16,377 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-12-01 02:47:16,378 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-12-01 02:47:20,288 basehttp "GET /admin/api/activity/add/ HTTP/1.1" 200 28350
+INFO 2025-12-01 02:47:20,313 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-12-01 02:47:20,315 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-12-01 02:47:20,317 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-01 02:47:20,317 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-12-01 02:47:20,320 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-12-01 02:47:20,322 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-12-01 02:47:20,322 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-12-01 02:47:20,327 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-01 02:47:20,328 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-01 02:47:20,331 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-12-01 02:47:20,332 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:47:20,336 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-12-01 02:47:20,337 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-12-01 02:47:20,338 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-12-01 02:47:20,340 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-12-01 02:47:20,346 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-12-01 02:47:20,346 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-12-01 02:47:20,376 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-12-01 02:47:20,376 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-12-01 02:47:26,712 basehttp "GET /admin/api/attendance/add/ HTTP/1.1" 200 28549
+INFO 2025-12-01 02:47:26,738 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:47:31,125 basehttp "GET /admin/api/attendance/ HTTP/1.1" 200 17134
+INFO 2025-12-01 02:47:31,151 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-12-01 02:47:31,151 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-12-01 02:47:31,155 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-12-01 02:47:31,156 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:47:31,167 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-12-01 02:47:31,892 basehttp "GET /admin/ HTTP/1.1" 200 16829
+WARNING 2025-12-01 02:51:06,185 log Unauthorized: /api/documents/upload/
+WARNING 2025-12-01 02:51:06,187 basehttp "POST /api/documents/upload/ HTTP/1.1" 401 58
+INFO 2025-12-01 02:51:13,186 basehttp "GET /admin/ HTTP/1.1" 200 16829
+INFO 2025-12-01 02:51:17,471 basehttp "GET /admin/api/activity/ HTTP/1.1" 200 17269
+INFO 2025-12-01 02:51:17,500 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:54:34,637 autoreload /Users/piyashah/backend-repo/api/views.py changed, reloading.
+INFO 2025-12-01 02:54:35,199 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 02:56:05,176 autoreload /Users/piyashah/backend-repo/api/views.py changed, reloading.
+INFO 2025-12-01 02:56:05,711 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 02:56:19,806 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 02:56:46,523 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 02:57:02,766 basehttp "GET /admin/api/activity/ HTTP/1.1" 200 17269
+INFO 2025-12-01 02:57:02,787 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,788 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,790 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,790 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,790 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,790 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,792 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,792 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,793 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,794 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,795 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,795 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,796 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,796 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,796 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,799 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 02:57:02,800 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,801 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,815 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,815 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 02:57:02,815 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+WARNING 2025-12-01 02:57:13,045 log Method Not Allowed: /api/documents/upload/
+WARNING 2025-12-01 02:57:13,046 basehttp "POST /api/documents/upload/ HTTP/1.1" 405 41
+WARNING 2025-12-01 02:58:14,085 log Method Not Allowed: /api/documents/upload/
+WARNING 2025-12-01 02:58:14,087 basehttp "POST /api/documents/upload/ HTTP/1.1" 405 41
+INFO 2025-12-01 03:01:01,136 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-01 03:01:07,847 log Unauthorized: /api/upload/files/
+WARNING 2025-12-01 03:01:07,848 basehttp "POST /api/upload/files/ HTTP/1.1" 401 58
+WARNING 2025-12-01 03:01:12,967 log Unauthorized: /api/upload/files/
+WARNING 2025-12-01 03:01:12,968 basehttp "POST /api/upload/files/ HTTP/1.1" 401 58
+INFO 2025-12-01 03:03:13,905 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-01 03:03:25,567 log Bad Request: /api/upload/files/
+WARNING 2025-12-01 03:03:25,567 basehttp "POST /api/upload/files/ HTTP/1.1" 400 29
+WARNING 2025-12-01 03:03:26,671 log Bad Request: /api/upload/files/
+WARNING 2025-12-01 03:03:26,672 basehttp "POST /api/upload/files/ HTTP/1.1" 400 29
+WARNING 2025-12-01 03:03:32,335 log Bad Request: /api/upload/files/
+WARNING 2025-12-01 03:03:32,336 basehttp "POST /api/upload/files/ HTTP/1.1" 400 29
+WARNING 2025-12-01 03:03:33,820 log Bad Request: /api/upload/files/
+WARNING 2025-12-01 03:03:33,821 basehttp "POST /api/upload/files/ HTTP/1.1" 400 29
+INFO 2025-12-01 03:08:01,056 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-01 03:08:05,603 log Internal Server Error: /api/upload/files/
+Traceback (most recent call last):
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/api/views.py", line 250, in post
+    document = Document.objects.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 661, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/piyashah/backend-repo/.venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<django.contrib.auth.models.AnonymousUser object at 0x109da06d0>": "Document.uploader" must be a "User" instance.
+ERROR 2025-12-01 03:08:05,605 basehttp "POST /api/upload/files/ HTTP/1.1" 500 120780
+INFO 2025-12-01 03:14:12,094 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 03:16:47,403 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 03:17:39,927 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 08:14:25,012 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 08:18:39,640 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 08:24:12,779 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 08:26:48,538 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 08:29:43,222 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 08:30:06,729 basehttp "POST /api/upload/files/ HTTP/1.1" 201 280
+INFO 2025-12-01 08:32:03,177 basehttp "POST /api/upload/files/ HTTP/1.1" 201 280
+INFO 2025-12-01 12:14:14,342 basehttp "POST /api/upload/files/ HTTP/1.1" 201 276
+INFO 2025-12-01 12:16:20,071 basehttp "POST /api/upload/files/ HTTP/1.1" 201 461
+INFO 2025-12-01 13:19:00,011 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 13:20:24,717 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 13:23:23,986 basehttp "OPTIONS /api/upload/files/ HTTP/1.1" 200 0
+INFO 2025-12-01 13:24:13,749 basehttp "POST /api/upload/files/ HTTP/1.1" 201 280
+WARNING 2025-12-01 13:41:26,685 log Not Found: /api/stats/
+WARNING 2025-12-01 13:41:26,686 basehttp "GET /api/stats/ HTTP/1.1" 404 10517
+WARNING 2025-12-01 13:41:26,690 log Not Found: /api/stats/
+WARNING 2025-12-01 13:41:26,690 basehttp "GET /api/stats/ HTTP/1.1" 404 10517
+WARNING 2025-12-01 13:41:28,516 log Not Found: /api/stats/
+WARNING 2025-12-01 13:41:28,516 basehttp "GET /api/stats/ HTTP/1.1" 404 10517
+WARNING 2025-12-01 13:41:28,524 log Not Found: /api/stats/
+WARNING 2025-12-01 13:41:28,524 basehttp "GET /api/stats/ HTTP/1.1" 404 10517
+INFO 2025-12-01 13:45:30,857 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 13:45:40,545 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:32:31,511 basehttp "OPTIONS /api/token/ HTTP/1.1" 200 0
+WARNING 2025-12-01 14:32:31,687 log Unauthorized: /api/token/
+WARNING 2025-12-01 14:32:31,688 basehttp "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-01 14:32:35,732 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-01 14:32:35,969 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:32:35,971 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:33:52,758 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:33:52,762 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:36:50,346 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:36:50,347 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:36:58,331 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:36:58,336 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:52:47,353 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-01 14:52:47,353 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-01 14:52:47,356 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:52:47,357 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:52:49,840 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:52:49,841 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:52:57,318 basehttp "OPTIONS /api/upload/files/ HTTP/1.1" 200 0
+INFO 2025-12-01 14:52:57,348 basehttp "POST /api/upload/files/ HTTP/1.1" 201 280
+INFO 2025-12-01 14:52:59,856 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:52:59,859 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:53:02,636 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:53:02,637 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:57:31,246 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:57:31,247 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 14:57:43,894 basehttp "POST /api/upload/files/ HTTP/1.1" 201 276
+INFO 2025-12-01 15:05:59,836 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-01 15:06:20,592 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:06:20,593 basehttp "GET /api/stats/filter/ HTTP/1.1" 404 10799
+WARNING 2025-12-01 15:06:20,606 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:06:20,606 basehttp "GET /api/stats/filter/?city=Mumbai HTTP/1.1" 404 10811
+WARNING 2025-12-01 15:06:20,616 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:06:20,616 basehttp "GET /api/stats/filter/?document_type=Attendance HTTP/1.1" 404 10824
+WARNING 2025-12-01 15:06:20,626 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:06:20,626 basehttp "GET /api/stats/filter/?city=Pune&document_type=Student%20Records&date=2025-12-01 HTTP/1.1" 404 10865
+WARNING 2025-12-01 15:18:01,976 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:18:01,977 basehttp "GET /api/stats/filter/ HTTP/1.1" 404 10799
+WARNING 2025-12-01 15:18:01,989 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:18:01,989 basehttp "GET /api/stats/filter/?city=Mumbai HTTP/1.1" 404 10811
+WARNING 2025-12-01 15:18:02,000 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:18:02,000 basehttp "GET /api/stats/filter/?document_type=Attendance HTTP/1.1" 404 10824
+WARNING 2025-12-01 15:18:02,010 log Not Found: /api/stats/filter/
+WARNING 2025-12-01 15:18:02,010 basehttp "GET /api/stats/filter/?city=Pune&document_type=Student%20Records&date=2025-12-01 HTTP/1.1" 404 10865
+INFO 2025-12-01 15:24:36,824 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 15:24:48,138 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 15:24:48,150 basehttp "GET /api/stats/filter/?city=Mumbai HTTP/1.1" 200 256
+INFO 2025-12-01 15:24:48,160 basehttp "GET /api/stats/filter/?document_type=Attendance HTTP/1.1" 200 260
+INFO 2025-12-01 15:24:48,170 basehttp "GET /api/stats/filter/?city=Pune&document_type=Student%20Records&date=2025-12-01 HTTP/1.1" 200 275
+INFO 2025-12-01 15:27:05,734 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:27:05,738 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:27:12,300 basehttp "POST /api/upload/files/ HTTP/1.1" 201 280
+INFO 2025-12-01 15:27:36,418 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:27:36,421 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:28:22,999 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:28:23,004 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:39:51,262 basehttp "GET /api/stats/filter/?city=Mumbai HTTP/1.1" 200 256
+INFO 2025-12-01 15:41:15,524 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:41:15,526 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:41:42,922 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:41:42,923 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:41:44,152 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:41:44,153 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:41:44,469 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:41:44,470 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:42:04,797 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:42:04,798 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:42:06,941 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:42:06,943 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 15:42:35,811 basehttp "POST /api/upload/files/ HTTP/1.1" 201 276
+WARNING 2025-12-01 16:39:52,430 log Unauthorized: /api/upload/files/
+WARNING 2025-12-01 16:39:52,431 basehttp "POST /api/upload/files/ HTTP/1.1" 401 183
+INFO 2025-12-01 16:39:52,435 basehttp "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2025-12-01 16:39:52,444 basehttp "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2025-12-01 16:39:52,466 basehttp "POST /api/upload/files/ HTTP/1.1" 201 280
+INFO 2025-12-01 16:39:57,876 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 16:39:57,879 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 16:40:00,771 basehttp "OPTIONS /api/stats/filter/?city=Mumbai HTTP/1.1" 200 0
+INFO 2025-12-01 16:40:00,774 basehttp "GET /api/stats/filter/?city=Mumbai HTTP/1.1" 200 256
+INFO 2025-12-01 16:40:03,053 basehttp "OPTIONS /api/stats/filter/?city=Pune HTTP/1.1" 200 0
+INFO 2025-12-01 16:40:03,056 basehttp "GET /api/stats/filter/?city=Pune HTTP/1.1" 200 254
+INFO 2025-12-01 16:40:06,281 basehttp "OPTIONS /api/stats/filter/?city=Pune&document_type=Survey+Forms HTTP/1.1" 200 0
+INFO 2025-12-01 16:40:06,284 basehttp "GET /api/stats/filter/?city=Pune&document_type=Survey+Forms HTTP/1.1" 200 264
+INFO 2025-12-01 16:40:08,760 basehttp "OPTIONS /api/stats/filter/?city=Pune&document_type=Survey+Forms&date=2025-12-18 HTTP/1.1" 200 0
+INFO 2025-12-01 16:40:08,762 basehttp "GET /api/stats/filter/?city=Pune&document_type=Survey+Forms&date=2025-12-18 HTTP/1.1" 200 272
+INFO 2025-12-01 16:42:13,163 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 16:42:13,166 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 16:42:17,429 basehttp "GET /api/stats/filter/?city=Mumbai HTTP/1.1" 200 256
+INFO 2025-12-01 16:58:06,847 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 16:58:20,491 basehttp "GET /api/stats/filter/?city=Mumbai HTTP/1.1" 200 256
+WARNING 2025-12-01 16:58:20,674 log Not Found: /favicon.ico
+WARNING 2025-12-01 16:58:20,674 basehttp "GET /favicon.ico HTTP/1.1" 404 3739
+INFO 2025-12-01 16:58:27,574 basehttp "GET /admin/api/financial/ HTTP/1.1" 302 0
+INFO 2025-12-01 16:58:27,596 basehttp "GET /admin/login/?next=/admin/api/financial/ HTTP/1.1" 200 4208
+INFO 2025-12-01 16:58:27,622 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:27,624 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:27,624 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:27,624 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:27,626 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:27,626 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:27,628 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2025-12-01 16:58:27,646 log Not Found: /favicon.ico
+WARNING 2025-12-01 16:58:27,646 basehttp "GET /favicon.ico HTTP/1.1" 404 3739
+INFO 2025-12-01 16:58:33,748 basehttp "POST /admin/login/?next=/admin/api/financial/ HTTP/1.1" 302 0
+INFO 2025-12-01 16:58:33,766 basehttp "GET /admin/api/financial/ HTTP/1.1" 200 16921
+INFO 2025-12-01 16:58:33,786 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,786 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,786 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,787 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,787 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,792 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,792 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,792 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,793 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,796 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,798 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,798 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 16:58:33,807 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,808 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:33,808 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,502 basehttp "GET /admin/api/document/add/ HTTP/1.1" 200 36255
+INFO 2025-12-01 16:58:40,527 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,528 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,528 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,529 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,533 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-01 16:58:40,534 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,537 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,537 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,547 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,574 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:40,575 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2025-12-01 16:58:46,695 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 16:58:46,697 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-01 16:58:49,160 basehttp "GET /api/stats/filter/?city=Pune HTTP/1.1" 200 254
+INFO 2025-12-01 16:58:51,124 basehttp "GET /api/stats/filter/?city=Pune&document_type=Survey+Forms HTTP/1.1" 200 264
+INFO 2025-12-01 17:02:50,717 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:03:49,241 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:03:49,252 basehttp "GET /api/stats/filter/?city=Pune HTTP/1.1" 200 254
+INFO 2025-12-01 17:03:49,262 basehttp "GET /api/stats/filter/?city=Pune&document_type=Survey%20Forms HTTP/1.1" 200 264
+INFO 2025-12-01 17:03:49,270 basehttp "GET /api/stats/filter/?date=2025-12-01 HTTP/1.1" 200 261
+INFO 2025-12-01 17:04:24,090 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:04:24,106 basehttp "GET /api/stats/filter/?city=Pune HTTP/1.1" 200 254
+INFO 2025-12-01 17:04:24,119 basehttp "GET /api/stats/filter/?city=Pune&document_type=Survey%20Forms HTTP/1.1" 200 264
+INFO 2025-12-01 17:04:24,131 basehttp "GET /api/stats/filter/?date=2025-12-01 HTTP/1.1" 200 261
+INFO 2025-12-01 17:04:46,503 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:04:52,850 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:04:52,916 basehttp "GET /api/stats/filter/?city=Pune HTTP/1.1" 200 254
+INFO 2025-12-01 17:04:52,956 basehttp "GET /api/stats/filter/?city=Pune&document_type=Survey%20Forms HTTP/1.1" 200 264
+INFO 2025-12-01 17:04:52,998 basehttp "GET /api/stats/filter/?date=2025-12-01 HTTP/1.1" 200 261
+INFO 2025-12-01 17:04:57,400 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:05:01,541 basehttp "GET /api/stats/filter/?city=Pune HTTP/1.1" 200 254
+INFO 2025-12-01 17:12:02,006 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:12:02,010 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:12:02,011 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:12:02,012 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:12:03,764 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:12:03,766 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:12:03,767 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:12:03,768 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:13:07,761 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:13:07,762 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:13:07,764 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:13:07,766 basehttp "GET /api/stats/filter/ HTTP/1.1" 200 253
+INFO 2025-12-01 17:18:36,570 basehttp "GET /api/stats/filter/?date=2025-12-06 HTTP/1.1" 200 261
+INFO 2025-12-01 17:18:39,164 basehttp "GET /api/stats/filter/?date=2025-12-31 HTTP/1.1" 200 261
+INFO 2025-12-01 17:18:41,774 basehttp "GET /api/stats/filter/?document_type=Survey+Forms&date=2025-12-31 HTTP/1.1" 200 270
+INFO 2025-12-01 17:18:43,189 basehttp "GET /api/stats/filter/?city=Mumbai&document_type=Survey+Forms&date=2025-12-31 HTTP/1.1" 200 274
+INFO 2025-12-01 17:19:17,234 basehttp "POST /api/upload/files/ HTTP/1.1" 201 281
+INFO 2025-12-01 19:53:49,898 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:54:47,594 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-01 19:55:53,756 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:56:05,488 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-01 19:56:52,379 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-01 19:58:04,396 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-01 19:59:11,079 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:59:44,622 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-01 20:00:05,629 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-01 20:01:19,035 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 20:01:45,741 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-01 20:06:05,201 basehttp "OPTIONS /api/upload/files/ HTTP/1.1" 200 0
+WARNING 2025-12-01 20:06:05,227 log Unauthorized: /api/upload/files/
+WARNING 2025-12-01 20:06:05,227 basehttp "POST /api/upload/files/ HTTP/1.1" 401 183
+INFO 2025-12-01 20:06:05,233 basehttp "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2025-12-01 20:06:05,251 basehttp "POST /api/upload/files/ HTTP/1.1" 201 283
+INFO 2025-12-01 20:08:24,151 autoreload /Users/piyashah/backend-repo/api/views.py changed, reloading.
+INFO 2025-12-01 20:08:24,652 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 20:08:43,440 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 20:10:03,366 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 20:10:55,638 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 20:12:19,548 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 20:12:50,740 basehttp "POST /api/upload/files/ HTTP/1.1" 201 269
+INFO 2025-12-05 13:24:59,210 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 13:27:19,542 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 13:27:56,114 basehttp "OPTIONS /api/upload/files/ HTTP/1.1" 200 0
+WARNING 2025-12-05 13:27:56,149 log Unauthorized: /api/upload/files/
+WARNING 2025-12-05 13:27:56,149 basehttp "POST /api/upload/files/ HTTP/1.1" 401 183
+INFO 2025-12-05 13:27:56,154 basehttp "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2025-12-05 13:27:56,157 basehttp "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2025-12-05 13:27:56,186 basehttp "POST /api/upload/files/ HTTP/1.1" 201 275
+INFO 2025-12-05 13:42:43,807 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 13:43:59,355 basehttp "POST /api/upload/files/ HTTP/1.1" 201 277
+INFO 2025-12-05 13:56:20,903 autoreload /Users/piyashah/backend-repo/api/views.py changed, reloading.
+INFO 2025-12-05 13:56:21,359 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 14:14:38,290 basehttp "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-12-05 14:14:38,489 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-05 14:14:49,537 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-05 14:14:50,194 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-05 14:14:50,429 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-05 14:14:50,894 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-05 14:14:51,077 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-05 14:14:51,245 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-05 14:14:51,461 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-05 14:16:46,803 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 14:16:46,807 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 14:25:33,671 basehttp "OPTIONS /api/documents/51/ HTTP/1.1" 200 0
+INFO 2025-12-05 14:25:33,724 basehttp "PATCH /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 14:32:12,101 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 14:33:53,387 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 14:33:53,396 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 15:15:14,414 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 15:15:14,422 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 15:39:16,340 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 15:39:16,345 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 16:30:07,959 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 16:30:07,965 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 18:51:42,731 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 18:51:42,738 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 22:09:22,182 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 22:09:22,194 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 22:13:23,749 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-05 22:13:23,752 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 00:04:32,194 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 00:04:32,199 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 01:08:01,013 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 01:08:01,026 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 01:39:53,773 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 01:39:53,782 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 03:02:31,654 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 03:02:31,662 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 10:38:17,036 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 10:38:17,042 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:09:46,924 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:09:46,928 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:10:36,954 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:10:36,962 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:43:56,307 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 11:44:02,181 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:44:02,185 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:44:15,342 basehttp "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-12-06 11:44:15,525 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 11:48:13,779 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:48:13,787 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 11:50:26,883 basehttp "GET /api/documents/ HTTP/1.1" 200 61151
+WARNING 2025-12-06 11:50:26,926 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 11:50:26,926 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,929 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 11:50:26,929 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,931 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 11:50:26,931 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,935 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 11:50:26,935 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,939 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 11:50:26,939 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,941 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 11:50:26,941 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,942 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 11:50:26,942 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,951 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 11:50:26,951 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,952 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 11:50:26,952 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:26,954 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 11:50:26,954 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:45,003 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 11:50:45,004 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:45,008 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 11:50:45,008 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:45,011 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 11:50:45,011 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:45,012 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 11:50:45,013 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:45,015 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-06 11:50:45,015 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+INFO 2025-12-06 11:50:56,511 basehttp "GET /api/documents/ HTTP/1.1" 200 61151
+WARNING 2025-12-06 11:50:56,553 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 11:50:56,554 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,564 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 11:50:56,565 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,566 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 11:50:56,566 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,574 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 11:50:56,574 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,577 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 11:50:56,577 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,581 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 11:50:56,582 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,584 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 11:50:56,584 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,585 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 11:50:56,586 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,589 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 11:50:56,589 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,591 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 11:50:56,591 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:50:56,605 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-06 11:50:56,605 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+INFO 2025-12-06 11:51:35,916 basehttp "GET /admin/api/document/add/ HTTP/1.1" 302 0
+INFO 2025-12-06 11:51:35,934 basehttp "GET /admin/login/?next=/admin/api/document/add/ HTTP/1.1" 200 4214
+WARNING 2025-12-06 11:51:35,991 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-06 11:51:35,992 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+WARNING 2025-12-06 11:51:35,992 log Not Found: /static/admin/css/base.css
+WARNING 2025-12-06 11:51:35,992 basehttp "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:51:35,995 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-12-06 11:51:35,995 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2025-12-06 11:53:14,509 basehttp "POST /admin/login/?next=/admin/api/document/add/ HTTP/1.1" 302 0
+INFO 2025-12-06 11:53:14,549 basehttp "GET /admin/api/document/add/ HTTP/1.1" 200 36514
+WARNING 2025-12-06 11:53:14,608 log Not Found: /static/admin/css/base.css
+WARNING 2025-12-06 11:53:14,608 basehttp "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,619 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-06 11:53:14,623 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-12-06 11:53:14,624 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,624 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,627 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-12-06 11:53:14,627 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+INFO 2025-12-06 11:53:14,633 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-12-06 11:53:14,636 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-12-06 11:53:14,636 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,639 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-12-06 11:53:14,639 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,640 log Not Found: /static/admin/js/theme.js
+WARNING 2025-12-06 11:53:14,641 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,641 log Not Found: /static/admin/js/core.js
+WARNING 2025-12-06 11:53:14,642 basehttp "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,645 log Not Found: /static/admin/css/forms.css
+WARNING 2025-12-06 11:53:14,645 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,652 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-12-06 11:53:14,652 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,653 log Not Found: /static/admin/js/calendar.js
+WARNING 2025-12-06 11:53:14,654 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,656 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-12-06 11:53:14,656 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,661 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-12-06 11:53:14,661 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,662 log Not Found: /static/admin/js/urlify.js
+WARNING 2025-12-06 11:53:14,662 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,665 log Not Found: /static/admin/js/actions.js
+WARNING 2025-12-06 11:53:14,666 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,668 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-12-06 11:53:14,668 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,670 log Not Found: /static/admin/js/prepopulate_init.js
+WARNING 2025-12-06 11:53:14,670 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,680 log Not Found: /static/admin/js/admin/DateTimeShortcuts.js
+WARNING 2025-12-06 11:53:14,680 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,685 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-12-06 11:53:14,685 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,697 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-12-06 11:53:14,700 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,700 log Not Found: /static/admin/img/icon-addlink.svg
+WARNING 2025-12-06 11:53:14,701 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,702 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-12-06 11:53:14,702 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,705 log Not Found: /static/admin/img/icon-deletelink.svg
+WARNING 2025-12-06 11:53:14,706 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,708 log Not Found: /static/admin/img/icon-changelink.svg
+WARNING 2025-12-06 11:53:14,708 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,712 log Not Found: /static/admin/img/icon-viewlink.svg
+WARNING 2025-12-06 11:53:14,712 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:14,739 log Not Found: /static/admin/js/change_form.js
+WARNING 2025-12-06 11:53:14,740 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 404 179
+INFO 2025-12-06 11:53:19,226 basehttp "GET /admin/api/document/ HTTP/1.1" 200 59461
+WARNING 2025-12-06 11:53:19,276 log Not Found: /static/admin/css/base.css
+WARNING 2025-12-06 11:53:19,276 basehttp "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,283 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-12-06 11:53:19,283 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+INFO 2025-12-06 11:53:19,286 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-12-06 11:53:19,290 log Not Found: /static/admin/js/theme.js
+WARNING 2025-12-06 11:53:19,290 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,291 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-12-06 11:53:19,292 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,300 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-12-06 11:53:19,301 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,305 log Not Found: /static/admin/css/changelists.css
+WARNING 2025-12-06 11:53:19,306 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,306 log Not Found: /static/admin/js/core.js
+WARNING 2025-12-06 11:53:19,307 basehttp "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,312 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-12-06 11:53:19,312 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,315 log Not Found: /static/admin/js/actions.js
+WARNING 2025-12-06 11:53:19,317 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,319 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-12-06 11:53:19,321 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,322 log Not Found: /static/admin/js/urlify.js
+WARNING 2025-12-06 11:53:19,323 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,325 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-12-06 11:53:19,325 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,329 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-12-06 11:53:19,329 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,333 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-12-06 11:53:19,333 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,334 log Not Found: /static/admin/img/search.svg
+WARNING 2025-12-06 11:53:19,334 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,337 log Not Found: /static/admin/img/icon-no.svg
+WARNING 2025-12-06 11:53:19,338 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,339 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-06 11:53:19,339 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,341 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-12-06 11:53:19,341 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,345 log Not Found: /static/admin/js/filters.js
+WARNING 2025-12-06 11:53:19,345 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,350 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-12-06 11:53:19,351 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,359 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-12-06 11:53:19,360 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:53:19,363 log Not Found: /static/admin/img/icon-no.svg
+WARNING 2025-12-06 11:53:19,363 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+INFO 2025-12-06 11:53:46,856 basehttp "GET /admin/api/document/add/ HTTP/1.1" 200 36514
+WARNING 2025-12-06 11:53:46,952 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-06 11:53:46,952 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+INFO 2025-12-06 11:57:34,673 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 11:57:42,864 basehttp "GET /api/documents/ HTTP/1.1" 200 61151
+WARNING 2025-12-06 11:57:42,917 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-06 11:57:42,918 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,918 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 11:57:42,919 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,924 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 11:57:42,924 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,929 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 11:57:42,929 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,934 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 11:57:42,934 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,938 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 11:57:42,939 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,940 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 11:57:42,941 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,942 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 11:57:42,942 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,944 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 11:57:42,944 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,947 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 11:57:42,947 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 11:57:42,965 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 11:57:42,966 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+INFO 2025-12-06 12:08:43,696 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 12:15:10,354 basehttp "GET /api/documents/ HTTP/1.1" 200 61151
+WARNING 2025-12-06 12:15:10,390 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 12:15:10,391 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,393 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 12:15:10,394 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,394 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 12:15:10,394 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,397 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 12:15:10,397 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,400 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 12:15:10,400 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,403 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 12:15:10,403 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,405 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 12:15:10,405 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,406 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 12:15:10,406 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,411 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 12:15:10,411 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:10,412 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 12:15:10,412 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+INFO 2025-12-06 12:15:11,230 basehttp "GET /api/documents/ HTTP/1.1" 200 61151
+WARNING 2025-12-06 12:15:11,261 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 12:15:11,261 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,261 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 12:15:11,262 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,265 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 12:15:11,265 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,267 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 12:15:11,268 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,271 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 12:15:11,271 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,274 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 12:15:11,274 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,276 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 12:15:11,276 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,278 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 12:15:11,279 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,282 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 12:15:11,285 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,299 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 12:15:11,299 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+INFO 2025-12-06 12:15:11,401 basehttp "GET /api/documents/ HTTP/1.1" 200 61151
+WARNING 2025-12-06 12:15:11,428 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 12:15:11,429 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,431 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 12:15:11,431 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,433 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 12:15:11,433 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,435 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 12:15:11,435 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,438 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 12:15:11,438 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,439 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 12:15:11,439 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,440 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 12:15:11,440 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,441 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 12:15:11,441 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,451 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 12:15:11,451 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:15:11,452 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 12:15:11,452 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+INFO 2025-12-06 12:18:27,605 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:18:27,623 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:18:40,540 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:18:40,623 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:18:50,563 basehttp "GET /api/documents/1/ HTTP/1.1" 200 353
+INFO 2025-12-06 12:18:50,569 basehttp "GET /api/documents/1/ HTTP/1.1" 200 353
+INFO 2025-12-06 12:22:07,684 basehttp "GET /api/documents/1/ HTTP/1.1" 200 353
+INFO 2025-12-06 12:22:07,688 basehttp "GET /api/documents/1/ HTTP/1.1" 200 353
+INFO 2025-12-06 12:22:08,662 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:22:08,689 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:22:12,729 basehttp "GET /api/documents/1/ HTTP/1.1" 200 353
+INFO 2025-12-06 12:22:12,737 basehttp "GET /api/documents/1/ HTTP/1.1" 200 353
+INFO 2025-12-06 12:22:14,425 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:22:14,455 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:22:38,786 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:22:38,804 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:23:26,163 basehttp "OPTIONS /api/upload/files/ HTTP/1.1" 200 0
+INFO 2025-12-06 12:23:26,208 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-06 12:23:37,344 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:23:37,365 basehttp "GET /api/documents/ HTTP/1.1" 200 17874
+INFO 2025-12-06 12:25:06,023 basehttp "GET /api/documents/59/ HTTP/1.1" 200 15214
+WARNING 2025-12-06 12:25:06,075 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 12:25:06,075 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,083 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 12:25:06,083 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,084 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 12:25:06,084 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,085 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 12:25:06,085 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,103 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 12:25:06,103 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,129 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 12:25:06,130 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,201 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 12:25:06,201 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,205 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 12:25:06,206 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,207 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 12:25:06,207 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,210 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 12:25:06,210 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 12:25:06,219 log Not Found: /favicon.ico
+WARNING 2025-12-06 12:25:06,219 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-12-06 12:29:24,238 autoreload /Users/piyashah/backend-repo/api/views.py changed, reloading.
+INFO 2025-12-06 12:29:24,779 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 12:29:43,245 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 12:29:49,304 basehttp "GET /api/documents/ HTTP/1.1" 200 18015
+INFO 2025-12-06 12:29:49,330 basehttp "GET /api/documents/ HTTP/1.1" 200 18015
+INFO 2025-12-06 12:37:57,107 basehttp "GET /api/documents/59/ HTTP/1.1" 200 366
+INFO 2025-12-06 12:37:57,115 basehttp "GET /api/documents/59/ HTTP/1.1" 200 366
+WARNING 2025-12-06 12:38:01,616 log Not Found: /api/documents/59/finalize/
+WARNING 2025-12-06 12:38:01,618 basehttp "POST /api/documents/59/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 12:38:01,624 basehttp "OPTIONS /api/documents/59/ HTTP/1.1" 200 0
+INFO 2025-12-06 12:38:01,638 basehttp "PATCH /api/documents/59/ HTTP/1.1" 200 366
+WARNING 2025-12-06 12:38:09,701 log Unauthorized: /api/token/
+WARNING 2025-12-06 12:38:09,701 basehttp "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-06 12:38:14,060 log Unauthorized: /api/token/
+WARNING 2025-12-06 12:38:14,060 basehttp "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-06 12:38:19,735 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 12:38:59,273 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-06 12:39:36,839 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+INFO 2025-12-06 12:39:36,844 basehttp "GET /api/documents/51/ HTTP/1.1" 200 390
+WARNING 2025-12-06 12:39:40,332 log Not Found: /api/documents/51/finalize/
+WARNING 2025-12-06 12:39:40,332 basehttp "POST /api/documents/51/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 12:39:40,336 basehttp "OPTIONS /api/documents/51/ HTTP/1.1" 200 0
+INFO 2025-12-06 12:39:40,350 basehttp "PATCH /api/documents/51/ HTTP/1.1" 200 384
+INFO 2025-12-06 12:41:01,977 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 12:41:38,220 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+WARNING 2025-12-06 12:47:55,757 log Unauthorized: /api/upload/files/
+WARNING 2025-12-06 12:47:55,759 basehttp "POST /api/upload/files/ HTTP/1.1" 401 61
+INFO 2025-12-06 12:48:29,511 basehttp "POST /api/token/ HTTP/1.1" 200 483
+WARNING 2025-12-06 12:48:35,955 log Unauthorized: /api/upload/files/
+WARNING 2025-12-06 12:48:35,956 basehttp "POST /api/upload/files/ HTTP/1.1" 401 61
+INFO 2025-12-06 12:58:06,639 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 13:09:21,455 basehttp "POST /api/token/ HTTP/1.1" 200 483
+WARNING 2025-12-06 13:11:03,661 log Unauthorized: /api/upload/files/
+WARNING 2025-12-06 13:11:03,662 basehttp "POST /api/upload/files/ HTTP/1.1" 401 61
+INFO 2025-12-06 13:15:04,259 basehttp "OPTIONS /api/token/verify/ HTTP/1.1" 200 0
+WARNING 2025-12-06 13:15:04,266 log Not Found: /api/token/verify/
+WARNING 2025-12-06 13:15:04,266 basehttp "POST /api/token/verify/ HTTP/1.1" 404 179
+INFO 2025-12-06 13:18:18,989 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 13:18:29,025 basehttp "POST /api/upload/files/ HTTP/1.1" 201 118
+INFO 2025-12-06 14:12:21,567 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-06 14:12:21,595 basehttp "GET /api/documents/62/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:12:21,599 basehttp "GET /api/documents/62/ HTTP/1.1" 200 366
+WARNING 2025-12-06 14:12:28,687 log Not Found: /api/documents/62/finalize/
+WARNING 2025-12-06 14:12:28,687 basehttp "POST /api/documents/62/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 14:12:28,697 basehttp "OPTIONS /api/documents/62/ HTTP/1.1" 200 0
+INFO 2025-12-06 14:12:28,709 basehttp "PATCH /api/documents/62/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:12:36,179 basehttp "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-12-06 14:12:36,338 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 14:12:48,464 basehttp "GET /api/documents/51/ HTTP/1.1" 200 384
+INFO 2025-12-06 14:12:48,467 basehttp "GET /api/documents/51/ HTTP/1.1" 200 384
+INFO 2025-12-06 14:12:57,119 basehttp "GET /api/documents/62/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:12:57,124 basehttp "GET /api/documents/62/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:13:17,197 basehttp "GET /api/documents/62/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:13:17,200 basehttp "GET /api/documents/62/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:13:18,557 basehttp "GET /api/documents/51/ HTTP/1.1" 200 384
+INFO 2025-12-06 14:13:18,565 basehttp "GET /api/documents/51/ HTTP/1.1" 200 384
+INFO 2025-12-06 14:13:52,885 basehttp "GET /api/documents/59/ HTTP/1.1" 200 15214
+WARNING 2025-12-06 14:13:52,910 log Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-12-06 14:13:52,910 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,911 log Not Found: /static/rest_framework/css/default.css
+WARNING 2025-12-06 14:13:52,911 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,915 log Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-12-06 14:13:52,915 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,918 log Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+WARNING 2025-12-06 14:13:52,918 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,921 log Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-12-06 14:13:52,921 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,923 log Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-12-06 14:13:52,923 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,925 log Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-12-06 14:13:52,925 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,926 log Not Found: /static/rest_framework/js/default.js
+WARNING 2025-12-06 14:13:52,926 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,928 log Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-12-06 14:13:52,928 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 14:13:52,932 log Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-12-06 14:13:52,932 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+INFO 2025-12-06 14:14:11,550 basehttp "POST /api/upload/files/ HTTP/1.1" 201 303
+INFO 2025-12-06 14:14:11,571 basehttp "GET /api/documents/63/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:14:11,577 basehttp "GET /api/documents/63/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:14:55,351 basehttp "OPTIONS /api/documents/63/ HTTP/1.1" 200 0
+INFO 2025-12-06 14:14:55,380 basehttp "PATCH /api/documents/63/ HTTP/1.1" 200 366
+WARNING 2025-12-06 14:14:56,661 log Not Found: /api/documents/63/finalize/
+WARNING 2025-12-06 14:14:56,662 basehttp "POST /api/documents/63/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 14:14:56,679 basehttp "PATCH /api/documents/63/ HTTP/1.1" 200 366
+INFO 2025-12-06 14:15:04,668 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 14:20:30,728 basehttp "POST /api/upload/files/ HTTP/1.1" 201 307
+INFO 2025-12-06 14:20:30,750 basehttp "GET /api/documents/64/ HTTP/1.1" 200 370
+INFO 2025-12-06 14:20:30,755 basehttp "GET /api/documents/64/ HTTP/1.1" 200 370
+WARNING 2025-12-06 14:20:35,898 log Not Found: /api/documents/64/finalize/
+WARNING 2025-12-06 14:20:35,898 basehttp "POST /api/documents/64/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 14:20:35,902 basehttp "OPTIONS /api/documents/64/ HTTP/1.1" 200 0
+INFO 2025-12-06 14:20:35,914 basehttp "PATCH /api/documents/64/ HTTP/1.1" 200 370

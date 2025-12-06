@@ -9,6 +9,17 @@ from google.cloud import documentai_v1 as documentai
 from google.oauth2 import service_account
 import os
 
+class MockOCRProcessor:
+    def process_document(self, document_path, category):
+        return [
+            {
+                "field_name": "mock_field",
+                "field_value": "mock_value",
+                "confidence_score": 100,
+                "field_position": "mock_position"
+            }
+        ]
+
 class GoogleDocAIProcessor:
     """
     Google Document AI processor for extracting structured data from documents
@@ -404,14 +415,3 @@ class GoogleDocAIProcessor:
         
         return fields
 
-from google_docai_processor import GoogleDocAIProcessor
-
-processor = GoogleDocAIProcessor(
-    project_id='my-school-ocr-2024',           # ← Change this
-    location='us',                              # ← Change this (us or eu)
-    processor_id='abc123def456ghi789',          # ← Change this
-    credentials_path='./credentials.json'       # ← Path to downloaded JSON
-)
-
-# Now use it
-fields = processor.process_document('attendance.jpg', category_object)
