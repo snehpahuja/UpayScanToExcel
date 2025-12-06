@@ -1,0 +1,969 @@
+INFO 2025-12-06 15:41:19,049 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 15:41:25,581 basehttp "GET / HTTP/1.1" 200 889
+WARNING 2025-12-06 15:41:25,708 log Not Found: /favicon.ico
+WARNING 2025-12-06 15:41:25,709 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-12-06 15:45:06,809 basehttp "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-12-06 15:45:06,977 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 15:45:52,928 basehttp "OPTIONS /api/upload/files/ HTTP/1.1" 200 0
+INFO 2025-12-06 15:45:52,957 basehttp "POST /api/upload/files/ HTTP/1.1" 201 305
+INFO 2025-12-06 15:45:53,974 basehttp "OPTIONS /api/documents/1/ HTTP/1.1" 200 0
+INFO 2025-12-06 15:45:53,977 basehttp "OPTIONS /api/documents/1/ HTTP/1.1" 200 0
+INFO 2025-12-06 15:45:53,987 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 15:45:53,993 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 15:46:05,170 basehttp "OPTIONS /api/documents/1/finalize/ HTTP/1.1" 200 0
+WARNING 2025-12-06 15:46:05,174 log Not Found: /api/documents/1/finalize/
+WARNING 2025-12-06 15:46:05,174 basehttp "POST /api/documents/1/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 15:46:25,219 basehttp "PATCH /api/documents/1/ HTTP/1.1" 200 365
+WARNING 2025-12-06 15:46:29,647 log Not Found: /api/documents/1/finalize/
+WARNING 2025-12-06 15:46:29,648 basehttp "POST /api/documents/1/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 15:46:35,556 basehttp "OPTIONS /api/documents/ HTTP/1.1" 200 0
+INFO 2025-12-06 15:46:35,574 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 15:46:35,583 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 15:46:39,192 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 15:46:39,202 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+WARNING 2025-12-06 15:46:42,660 log Not Found: /api/documents/1/finalize/
+WARNING 2025-12-06 15:46:42,660 basehttp "POST /api/documents/1/finalize/ HTTP/1.1" 404 179
+INFO 2025-12-06 15:46:44,463 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 15:46:44,472 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 15:48:06,016 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 16:04:30,441 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 16:04:35,316 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-12-06 16:04:48,468 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-06 16:04:48,469 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-06 16:04:48,473 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:04:48,474 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:04:49,786 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:04:49,787 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:05:42,977 basehttp "OPTIONS /api/profile/ HTTP/1.1" 200 0
+INFO 2025-12-06 16:05:42,984 basehttp "OPTIONS /api/profile/ HTTP/1.1" 200 0
+INFO 2025-12-06 16:05:43,015 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:05:43,018 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:06:23,792 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 16:06:23,808 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:23,810 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:26,642 basehttp "OPTIONS /api/dashboard/stats/ HTTP/1.1" 200 0
+INFO 2025-12-06 16:06:26,642 basehttp "OPTIONS /api/dashboard/stats/ HTTP/1.1" 200 0
+WARNING 2025-12-06 16:06:26,647 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:06:26,647 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:06:26,649 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:06:26,650 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:06:26,654 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:26,655 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:26,657 basehttp "OPTIONS /api/documents/?limit=5 HTTP/1.1" 200 0
+INFO 2025-12-06 16:06:26,662 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:06:26,666 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:06:42,135 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:06:42,139 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:06:45,190 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:06:45,195 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+WARNING 2025-12-06 16:06:50,401 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:06:50,402 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:06:50,417 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:06:50,419 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:06:50,419 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:50,427 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:50,433 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:06:50,439 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:06:57,683 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:06:57,688 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+WARNING 2025-12-06 16:06:59,051 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:06:59,052 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:06:59,053 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:06:59,054 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:06:59,058 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:59,061 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:06:59,070 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:06:59,077 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:00,681 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:00,685 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:03,302 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:03,305 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:07:04,242 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:07:04,243 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:07:04,244 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:07:04,244 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:07:04,245 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:04,247 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:04,256 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:04,260 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:09,060 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:09,062 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:07:10,950 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:07:10,950 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:07:10,953 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:07:10,954 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:07:10,954 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:10,956 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:10,960 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:10,968 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:12,493 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:12,495 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:07:13,371 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:07:13,372 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:07:13,373 log Not Found: /api/dashboard/stats/
+INFO 2025-12-06 16:07:13,375 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:07:13,375 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:07:13,379 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:07:13,385 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:07:13,389 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:03,766 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:08:03,769 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+WARNING 2025-12-06 16:08:11,173 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:11,174 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:08:11,175 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:11,176 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:08:11,179 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:11,182 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:11,188 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:11,192 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:11,860 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:11,866 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:12,890 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:12,893 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:08:14,771 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:14,771 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:08:14,773 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:14,775 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:08:14,775 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:14,777 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:14,785 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:14,789 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:20,129 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:20,134 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+WARNING 2025-12-06 16:08:21,183 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:21,184 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:08:21,186 log Not Found: /api/dashboard/stats/
+INFO 2025-12-06 16:08:21,187 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:08:21,188 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:08:21,191 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:21,199 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:21,204 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:23,927 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:23,933 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+WARNING 2025-12-06 16:08:26,570 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:26,570 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:08:26,571 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:26,571 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:08:26,577 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:26,579 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:26,589 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:26,596 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:27,844 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:08:27,851 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+WARNING 2025-12-06 16:08:30,385 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:30,385 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:08:30,387 log Not Found: /api/dashboard/stats/
+INFO 2025-12-06 16:08:30,389 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:08:30,389 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:08:30,395 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:30,402 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:30,406 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:36,753 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:36,757 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:39,762 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:08:39,770 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:08:42,143 basehttp "POST /api/documents/1/finalize/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:08:44,184 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:44,191 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:53,158 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:53,161 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:54,595 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:54,597 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:08:58,922 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:08:58,923 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:08:58,925 log Not Found: /api/dashboard/stats/
+INFO 2025-12-06 16:08:58,927 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+WARNING 2025-12-06 16:08:58,927 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:08:58,930 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:08:58,935 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:08:58,940 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:09:07,921 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:09:07,925 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+WARNING 2025-12-06 16:09:08,590 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:09:08,590 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+WARNING 2025-12-06 16:09:08,591 log Not Found: /api/dashboard/stats/
+WARNING 2025-12-06 16:09:08,592 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 404 179
+INFO 2025-12-06 16:09:08,595 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:09:08,597 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:09:08,606 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:09:08,609 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:43:54,338 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 16:44:09,627 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-12-06 16:44:37,444 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:44:37,448 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:44:39,437 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:39,446 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:39,448 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:39,453 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:41,374 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:44:41,378 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:44:42,536 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:42,543 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:42,546 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:42,549 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:43,185 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:43,192 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:45,642 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:44:45,645 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:44:48,206 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:44:48,208 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:44:49,164 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:49,166 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:49,172 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:49,175 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:51,287 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:44:51,293 basehttp "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-12-06 16:44:59,515 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:59,518 basehttp "GET /api/dashboard/stats/ HTTP/1.1" 200 161
+INFO 2025-12-06 16:44:59,528 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:44:59,534 basehttp "GET /api/documents/?limit=5 HTTP/1.1" 200 417
+INFO 2025-12-06 16:45:01,985 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:45:01,992 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:45:04,345 basehttp "POST /api/documents/1/finalize/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:45:06,348 basehttp "POST /api/documents/1/finalize/ HTTP/1.1" 200 365
+INFO 2025-12-06 16:45:06,367 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:45:06,375 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:45:08,381 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:45:08,391 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 16:45:09,471 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 16:45:09,475 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:10:37,735 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 17:10:42,175 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-12-06 17:10:57,929 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:10:57,930 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:11:02,475 basehttp "OPTIONS /api/stats/filter/?date=2025-12-11 HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:02,479 basehttp "GET /api/stats/filter/?date=2025-12-11 HTTP/1.1" 200 261
+INFO 2025-12-06 17:11:05,125 basehttp "OPTIONS /api/stats/filter/?date=2025-12-08 HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:05,128 basehttp "GET /api/stats/filter/?date=2025-12-08 HTTP/1.1" 200 261
+INFO 2025-12-06 17:11:08,234 basehttp "OPTIONS /api/stats/filter/?city=Mumbai&date=2025-12-08 HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:08,236 basehttp "GET /api/stats/filter/?city=Mumbai&date=2025-12-08 HTTP/1.1" 200 264
+INFO 2025-12-06 17:11:10,232 basehttp "OPTIONS /api/stats/filter/?city=Pune&date=2025-12-08 HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:10,235 basehttp "GET /api/stats/filter/?city=Pune&date=2025-12-08 HTTP/1.1" 200 262
+INFO 2025-12-06 17:11:12,333 basehttp "OPTIONS /api/stats/filter/?city=Pune&document_type=Student+Records&date=2025-12-08 HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:12,337 basehttp "GET /api/stats/filter/?city=Pune&document_type=Student+Records&date=2025-12-08 HTTP/1.1" 200 275
+INFO 2025-12-06 17:11:14,213 basehttp "OPTIONS /api/stats/filter/?city=Pune&document_type=Survey+Forms&date=2025-12-08 HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:14,215 basehttp "GET /api/stats/filter/?city=Pune&document_type=Survey+Forms&date=2025-12-08 HTTP/1.1" 200 272
+INFO 2025-12-06 17:11:16,905 basehttp "OPTIONS /api/analytics/attendance/statistics/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,909 basehttp "OPTIONS /api/analytics/enrollment/growth/ HTTP/1.1" 200 0
+ERROR 2025-12-06 17:11:16,913 log Not Implemented: /api/analytics/attendance/trend/
+INFO 2025-12-06 17:11:16,913 basehttp "OPTIONS /api/analytics/attendance/trend/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,913 basehttp "OPTIONS /api/analytics/grades/distribution/ HTTP/1.1" 200 0
+ERROR 2025-12-06 17:11:16,914 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:16,915 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+INFO 2025-12-06 17:11:16,916 basehttp "OPTIONS /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,916 basehttp "OPTIONS /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,917 basehttp "OPTIONS /api/analytics/grades/distribution/ HTTP/1.1" 200 0
+ERROR 2025-12-06 17:11:16,917 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+INFO 2025-12-06 17:11:16,917 basehttp "OPTIONS /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,918 basehttp "OPTIONS /api/analytics/documents/summary/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,918 basehttp "OPTIONS /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,918 basehttp "OPTIONS /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:16,919 basehttp "OPTIONS /api/analytics/enrollment/growth/ HTTP/1.1" 200 0
+ERROR 2025-12-06 17:11:16,919 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:16,919 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:16,920 log Not Implemented: /api/analytics/attendance/trend/
+INFO 2025-12-06 17:11:16,920 basehttp "OPTIONS /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 0
+ERROR 2025-12-06 17:11:16,921 log Not Implemented: /api/analytics/financial/budget-utilization/
+INFO 2025-12-06 17:11:16,921 basehttp "OPTIONS /api/analytics/documents/summary/ HTTP/1.1" 200 0
+ERROR 2025-12-06 17:11:16,921 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,922 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,922 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,923 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:16,924 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,924 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:16,925 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:16,925 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:16,925 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:16,926 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:16,926 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,926 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,927 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,927 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,928 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:16,928 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,928 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:16,929 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:16,930 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:16,930 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,930 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,930 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,931 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:16,931 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,805 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:29,807 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 17:11:29,809 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:29,809 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,809 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,810 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:29,811 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:29,812 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:29,813 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,815 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:29,816 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:29,817 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,817 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,817 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,818 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:29,819 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,521 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:30,522 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 17:11:30,523 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:30,523 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:30,524 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:30,524 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:30,525 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,525 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,525 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,526 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,529 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:30,529 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,530 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:30,530 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,531 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,531 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,850 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:30,851 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 17:11:30,851 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:30,852 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:30,852 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:30,853 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:30,854 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,854 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,855 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,855 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,856 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,856 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,857 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:30,858 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:30,858 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:30,858 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+INFO 2025-12-06 17:11:33,812 basehttp "OPTIONS /api/profile/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:33,812 basehttp "OPTIONS /api/profile/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:33,841 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 17:11:33,844 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+ERROR 2025-12-06 17:11:36,641 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:36,644 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 17:11:36,645 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:36,645 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,646 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:36,646 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:36,647 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:36,647 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:36,648 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,648 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,648 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,648 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,648 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 17:11:36,648 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,648 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,649 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:36,649 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:36,649 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:36,650 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:36,650 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:36,650 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,650 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,650 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,651 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,651 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,652 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:36,654 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:36,656 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:36,656 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,657 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,658 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:36,658 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+INFO 2025-12-06 17:11:43,227 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:43,228 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-06 17:11:43,232 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:11:43,236 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:11:45,986 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:11:45,987 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:11:47,661 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 17:11:47,666 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+ERROR 2025-12-06 17:11:48,519 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:48,520 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 17:11:48,520 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,521 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:48,521 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,522 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:48,524 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:48,525 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:48,525 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,527 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:48,528 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:48,528 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,528 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,529 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 17:11:48,529 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,529 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,530 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 17:11:48,530 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,531 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 17:11:48,531 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 17:11:48,531 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,532 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 17:11:48,533 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 17:11:48,533 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,533 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,534 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 17:11:48,534 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,534 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,535 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 17:11:48,535 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,535 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 17:11:48,535 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+INFO 2025-12-06 17:11:50,476 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 17:11:50,480 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 22:04:05,989 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:04:20,312 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-12-06 22:05:19,526 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:19,527 basehttp "OPTIONS /api/stats/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:19,530 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:05:19,531 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:05:23,855 basehttp "OPTIONS /api/stats/filter/?date=2025-12-05 HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:23,858 basehttp "GET /api/stats/filter/?date=2025-12-05 HTTP/1.1" 200 261
+INFO 2025-12-06 22:05:25,842 basehttp "OPTIONS /api/stats/filter/?city=Mumbai&date=2025-12-05 HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:25,845 basehttp "GET /api/stats/filter/?city=Mumbai&date=2025-12-05 HTTP/1.1" 200 264
+INFO 2025-12-06 22:05:28,268 basehttp "OPTIONS /api/stats/filter/?city=Mumbai&date=2025-12-06 HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:28,270 basehttp "GET /api/stats/filter/?city=Mumbai&date=2025-12-06 HTTP/1.1" 200 264
+INFO 2025-12-06 22:05:30,785 basehttp "OPTIONS /api/stats/filter/?city=Mumbai&document_type=Attendance&date=2025-12-06 HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:30,786 basehttp "GET /api/stats/filter/?city=Mumbai&document_type=Attendance&date=2025-12-06 HTTP/1.1" 200 272
+INFO 2025-12-06 22:05:33,888 basehttp "OPTIONS /api/analytics/attendance/statistics/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,889 basehttp "OPTIONS /api/analytics/attendance/trend/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,890 basehttp "OPTIONS /api/analytics/grades/distribution/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,892 basehttp "OPTIONS /api/analytics/documents/summary/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,892 basehttp "OPTIONS /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,892 basehttp "OPTIONS /api/analytics/enrollment/growth/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,893 basehttp "OPTIONS /api/analytics/attendance/statistics/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,893 basehttp "OPTIONS /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,894 basehttp "OPTIONS /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,894 basehttp "OPTIONS /api/analytics/enrollment/growth/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,894 basehttp "OPTIONS /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,895 basehttp "OPTIONS /api/analytics/attendance/trend/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,895 basehttp "OPTIONS /api/analytics/grades/distribution/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,904 basehttp "OPTIONS /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:33,905 basehttp "OPTIONS /api/analytics/documents/summary/ HTTP/1.1" 200 0
+ERROR 2025-12-06 22:05:33,905 log Not Implemented: /api/analytics/attendance/trend/
+INFO 2025-12-06 22:05:33,905 basehttp "OPTIONS /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 0
+ERROR 2025-12-06 22:05:33,905 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:33,906 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:33,906 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:33,906 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:33,907 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:33,907 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,907 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,908 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,908 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,908 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,909 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:33,909 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:33,910 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 22:05:33,910 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,910 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:33,911 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:33,911 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,911 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,912 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:33,912 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,912 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,913 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:33,914 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,914 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:33,915 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:33,916 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:33,917 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,917 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,917 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,917 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:33,918 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+INFO 2025-12-06 22:05:36,836 basehttp "OPTIONS /api/profile/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:36,841 basehttp "OPTIONS /api/profile/ HTTP/1.1" 200 0
+WARNING 2025-12-06 22:05:36,850 log Unauthorized: /api/profile/
+WARNING 2025-12-06 22:05:36,850 basehttp "GET /api/profile/ HTTP/1.1" 401 183
+WARNING 2025-12-06 22:05:36,851 log Unauthorized: /api/profile/
+INFO 2025-12-06 22:05:36,852 basehttp "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING 2025-12-06 22:05:36,852 basehttp "GET /api/profile/ HTTP/1.1" 401 183
+INFO 2025-12-06 22:05:36,854 basehttp "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:05:36,854 basehttp "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:05:36,870 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 22:05:36,874 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+ERROR 2025-12-06 22:05:38,169 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:38,171 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:38,172 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 22:05:38,173 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,174 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:38,174 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,172 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,175 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:38,176 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:38,176 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:38,176 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,176 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,176 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,177 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:38,178 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 22:05:38,179 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:38,179 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,179 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:38,179 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:38,179 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,180 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:38,180 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,182 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,183 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:38,183 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,184 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,184 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,185 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:38,185 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:38,185 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,185 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:38,186 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+INFO 2025-12-06 22:05:39,224 basehttp "OPTIONS /api/documents/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:39,224 basehttp "OPTIONS /api/documents/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:05:39,235 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 22:05:39,239 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+ERROR 2025-12-06 22:05:41,085 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:41,087 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:41,088 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:41,090 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:41,092 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:41,093 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 22:05:41,093 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,094 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,094 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,098 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:41,095 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,095 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,095 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,100 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:41,102 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:41,103 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:41,104 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:41,105 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,105 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:41,105 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,106 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,107 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,108 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 22:05:41,108 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:41,108 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,108 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,110 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:41,110 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:41,111 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,111 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,112 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:41,113 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+INFO 2025-12-06 22:05:42,640 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 22:05:42,644 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 22:05:44,663 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:05:44,665 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:05:45,938 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:05:45,940 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:05:49,761 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 22:05:49,766 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+ERROR 2025-12-06 22:05:53,215 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:53,218 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,220 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:53,220 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 22:05:53,220 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:53,221 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:53,221 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,222 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,223 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:53,223 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,224 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:53,224 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:53,225 log Not Implemented: /api/analytics/attendance/statistics/
+ERROR 2025-12-06 22:05:53,225 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,225 log Not Implemented: /api/analytics/documents/summary/
+ERROR 2025-12-06 22:05:53,225 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,225 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,226 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,226 log Not Implemented: /api/analytics/attendance/trend/
+ERROR 2025-12-06 22:05:53,226 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,228 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,229 log Not Implemented: /api/analytics/grades/distribution/
+ERROR 2025-12-06 22:05:53,229 log Not Implemented: /api/analytics/enrollment/growth/
+ERROR 2025-12-06 22:05:53,229 log Not Implemented: /api/analytics/financial/budget-utilization/
+ERROR 2025-12-06 22:05:53,230 log Not Implemented: /api/analytics/financial/expenditure-trend/
+ERROR 2025-12-06 22:05:53,230 log Not Implemented: /api/analytics/flagging/low-attendance/
+ERROR 2025-12-06 22:05:53,231 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,231 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,232 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,232 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,232 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 501 51
+ERROR 2025-12-06 22:05:53,233 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 501 51
+INFO 2025-12-06 22:05:54,608 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 22:05:54,617 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 22:13:15,823 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:13:20,878 basehttp "GET / HTTP/1.1" 200 889
+INFO 2025-12-06 22:13:27,476 basehttp "GET /redoc/ HTTP/1.1" 200 945
+WARNING 2025-12-06 22:13:27,541 log Not Found: /static/drf-yasg/style.css
+WARNING 2025-12-06 22:13:27,542 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-12-06 22:13:27,543 log Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-12-06 22:13:27,544 log Not Found: /static/drf-yasg/redoc-init.js
+WARNING 2025-12-06 22:13:27,546 log Not Found: /static/drf-yasg/redoc/redoc.min.js
+WARNING 2025-12-06 22:13:27,546 basehttp "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 404 179
+WARNING 2025-12-06 22:13:27,547 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 22:13:27,548 basehttp "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 404 179
+WARNING 2025-12-06 22:13:27,556 log Not Found: /static/drf-yasg/redoc/redoc-logo.png
+WARNING 2025-12-06 22:13:27,557 basehttp "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 404 179
+INFO 2025-12-06 22:13:47,540 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:13:47,541 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:13:47,542 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:13:47,546 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:13:47,549 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:13:47,554 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:13:47,558 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:13:47,559 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:13:47,561 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:13:47,565 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:13:47,572 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:13:47,573 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:13:47,591 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:13:47,614 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:13:47,619 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:13:47,628 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:13:55,593 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 22:13:55,597 basehttp "GET /api/profile/ HTTP/1.1" 200 580
+INFO 2025-12-06 22:14:02,775 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 22:14:02,779 basehttp "GET /api/documents/ HTTP/1.1" 200 417
+INFO 2025-12-06 22:14:07,175 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:14:07,180 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:14:42,233 basehttp "OPTIONS /api/upload/files/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:14:42,262 basehttp "POST /api/upload/files/ HTTP/1.1" 201 322
+INFO 2025-12-06 22:14:43,313 basehttp "OPTIONS /api/documents/2/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:14:43,319 basehttp "GET /api/documents/2/ HTTP/1.1" 200 381
+INFO 2025-12-06 22:14:43,325 basehttp "GET /api/documents/2/ HTTP/1.1" 200 381
+INFO 2025-12-06 22:14:47,808 basehttp "OPTIONS /api/documents/2/finalize/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:14:47,840 basehttp "POST /api/documents/2/finalize/ HTTP/1.1" 200 381
+INFO 2025-12-06 22:14:49,903 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:14:49,911 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:14:53,242 basehttp "GET /api/documents/2/ HTTP/1.1" 200 381
+INFO 2025-12-06 22:14:53,247 basehttp "GET /api/documents/2/ HTTP/1.1" 200 381
+INFO 2025-12-06 22:14:56,277 basehttp "POST /api/documents/2/finalize/ HTTP/1.1" 200 381
+INFO 2025-12-06 22:14:58,317 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:14:58,338 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:14:59,808 basehttp "OPTIONS /api/documents/1/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:14:59,808 basehttp "OPTIONS /api/documents/1/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:14:59,827 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 22:14:59,832 basehttp "GET /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 22:15:01,940 basehttp "PATCH /api/documents/1/ HTTP/1.1" 200 365
+INFO 2025-12-06 22:15:05,583 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:15:05,589 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:15:10,720 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:15:10,725 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:15:10,726 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:15:10,730 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:15:10,737 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:15:10,738 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:15:10,738 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:15:10,745 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:15:10,746 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:15:10,752 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:15:10,754 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:15:10,759 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:15:10,781 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:15:10,803 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:15:10,803 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:15:10,811 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:15:38,457 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:15:38,460 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:15:41,317 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:15:41,323 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:15:42,560 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:15:42,565 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:16:33,120 basehttp "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:16:33,291 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:16:33,322 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:16:33,324 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:16:35,848 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:16:35,855 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:16:37,287 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:16:37,288 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:16:37,292 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:16:37,301 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:16:37,306 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:16:37,306 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:16:37,308 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:16:37,315 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:16:37,316 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:16:37,317 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:16:37,318 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:16:37,326 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:16:37,347 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:16:37,369 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:16:37,370 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:16:37,384 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:16:39,940 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:16:39,944 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:16:43,042 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:16:43,046 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:16:47,633 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:16:47,641 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:16:48,559 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:16:48,561 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:16:48,563 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:16:48,567 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:16:48,568 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:16:48,571 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:16:48,572 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:16:48,582 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:16:48,585 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:16:48,585 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:16:48,586 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:16:48,594 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:16:48,614 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:16:48,638 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:16:48,640 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:16:48,651 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:16:51,673 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:16:51,677 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:16:53,433 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:16:53,436 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:16:53,439 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:16:53,439 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:16:53,450 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:16:53,455 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:16:53,459 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:16:53,461 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:16:53,466 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:16:53,470 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:16:53,472 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:16:53,484 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:16:53,502 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:16:53,510 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:16:53,531 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:16:53,538 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:16:58,809 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:16:58,811 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:17:02,610 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:17:02,614 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:17:21,407 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:17:21,411 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:17:25,651 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:17:25,663 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:17:25,664 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:17:25,665 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:17:25,669 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:17:25,675 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:17:25,678 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:17:25,680 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:17:25,682 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:17:25,685 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:17:25,689 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:17:25,691 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:17:25,712 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:17:25,737 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:17:25,741 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:17:25,763 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:17:28,795 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:17:28,796 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:17:30,862 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:17:30,867 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:17:32,369 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:17:32,373 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:17:32,374 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:17:32,377 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:17:32,379 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:17:32,380 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:17:32,388 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:17:32,389 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:17:32,390 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:17:32,393 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:17:32,401 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:17:32,403 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:17:32,423 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:17:32,447 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:17:32,448 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:17:32,472 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:17:34,956 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:17:34,959 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:17:39,516 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:17:39,523 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:22:07,208 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:22:18,523 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:22:18,527 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:22:27,641 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:22:27,651 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:22:27,660 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:22:27,664 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:22:30,287 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:22:30,293 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:22:34,436 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:22:34,439 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:22:34,442 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:22:34,444 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:22:34,448 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:22:34,454 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:22:34,455 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:22:34,455 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:22:34,462 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:22:34,462 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:22:34,465 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 120
+INFO 2025-12-06 22:22:34,474 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:22:34,492 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:22:34,514 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:22:34,516 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:22:34,524 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:22:38,188 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:22:38,193 basehttp "GET /api/documents/ HTTP/1.1" 200 799
+INFO 2025-12-06 22:22:43,628 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:22:43,634 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:22:45,111 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:22:45,114 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:23:59,280 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:24:10,774 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:24:10,792 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:24:10,827 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:24:10,830 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:24:13,474 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:24:13,481 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:24:17,631 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:24:17,636 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:24:23,550 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:24:23,556 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:24:24,630 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:24:24,635 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:25:04,590 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:25:04,597 basehttp "GET /api/profile/ HTTP/1.1" 200 443
+INFO 2025-12-06 22:25:04,669 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:25:04,684 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:25:11,012 basehttp "GET /api/profile/ HTTP/1.1" 200 443
+INFO 2025-12-06 22:25:11,018 basehttp "GET /api/profile/ HTTP/1.1" 200 443
+INFO 2025-12-06 22:25:13,681 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:25:13,683 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:25:13,686 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:25:13,687 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:25:13,697 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:25:13,697 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 66
+INFO 2025-12-06 22:25:13,698 basehttp "GET /api/analytics/financial/budget-utilization/ HTTP/1.1" 200 110
+INFO 2025-12-06 22:25:13,702 basehttp "GET /api/analytics/grades/distribution/ HTTP/1.1" 200 72
+INFO 2025-12-06 22:25:13,712 basehttp "GET /api/analytics/enrollment/growth/ HTTP/1.1" 200 746
+INFO 2025-12-06 22:25:13,713 basehttp "GET /api/analytics/attendance/statistics/ HTTP/1.1" 200 126
+INFO 2025-12-06 22:25:13,715 basehttp "GET /api/analytics/financial/expenditure-trend/ HTTP/1.1" 200 568
+INFO 2025-12-06 22:25:13,716 basehttp "GET /api/analytics/documents/summary/ HTTP/1.1" 200 66
+INFO 2025-12-06 22:25:13,736 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:25:13,762 basehttp "GET /api/analytics/flagging/low-attendance/ HTTP/1.1" 200 8706
+INFO 2025-12-06 22:25:13,767 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:25:13,790 basehttp "GET /api/analytics/attendance/trend/ HTTP/1.1" 200 394
+INFO 2025-12-06 22:25:15,177 basehttp "GET /api/documents/ HTTP/1.1" 200 52
+INFO 2025-12-06 22:25:15,180 basehttp "GET /api/documents/ HTTP/1.1" 200 52
+INFO 2025-12-06 22:25:16,954 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:25:16,959 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:31:53,848 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:32:10,325 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:32:10,332 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:32:10,355 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:32:10,380 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:32:15,080 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:32:15,085 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:32:15,100 basehttp "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:32:15,100 basehttp "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:32:15,114 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:32:15,121 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:32:32,164 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:32:32,186 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:32:33,963 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:32:33,964 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:32:38,936 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:32:38,941 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:32:38,951 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:32:38,954 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:35:00,643 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:35:14,474 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:35:14,482 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:35:14,508 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:35:14,511 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:35:18,570 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:35:18,575 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:35:18,599 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:35:18,604 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:35:32,883 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:35:32,885 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:37:18,438 autoreload /Users/gunturuvarsha/Desktop/upay_updated/upaydash/api/views.py changed, reloading.
+INFO 2025-12-06 22:37:19,174 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:37:46,709 autoreload /Users/gunturuvarsha/Desktop/upay_updated/upaydash/api/views.py changed, reloading.
+INFO 2025-12-06 22:37:47,285 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:38:06,810 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:38:06,819 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:38:06,855 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:38:06,860 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:38:09,476 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:38:09,481 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:38:10,546 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:38:10,555 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:39:24,134 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:39:32,198 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:39:32,199 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:39:35,888 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:39:35,896 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:39:39,081 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:39:39,086 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:39:39,112 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:39:39,118 basehttp "GET /api/users/ HTTP/1.1" 200 1562
+INFO 2025-12-06 22:40:10,316 basehttp "OPTIONS /api/users/5/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:40:10,359 basehttp "DELETE /api/users/5/ HTTP/1.1" 204 0
+INFO 2025-12-06 22:40:17,450 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:40:17,455 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:40:21,266 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:40:21,271 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:41:04,723 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:41:04,734 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:41:08,584 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:41:08,589 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:41:08,648 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:41:08,654 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:41:16,669 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:41:42,049 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:41:42,057 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:41:42,082 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:41:42,095 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:42:11,361 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:44:51,008 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:45:05,848 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:45:05,855 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:45:08,324 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:45:08,331 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:45:08,355 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:45:08,365 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:45:24,684 basehttp "OPTIONS /api/signup/ HTTP/1.1" 200 0
+WARNING 2025-12-06 22:45:24,727 log Bad Request: /api/signup/
+WARNING 2025-12-06 22:45:24,728 basehttp "POST /api/signup/ HTTP/1.1" 400 52
+INFO 2025-12-06 22:45:50,895 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:45:50,903 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:46:54,958 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:47:00,677 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:47:00,678 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:47:04,399 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:47:04,406 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:47:07,461 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:47:07,467 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:47:07,492 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:47:07,498 basehttp "GET /api/users/ HTTP/1.1" 200 1279
+INFO 2025-12-06 22:47:36,460 basehttp "POST /api/signup/ HTTP/1.1" 201 366
+INFO 2025-12-06 22:47:36,466 basehttp "GET /api/users/ HTTP/1.1" 200 1564
+WARNING 2025-12-06 22:47:58,845 log Unauthorized: /api/token/
+WARNING 2025-12-06 22:47:58,846 basehttp "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-06 22:53:07,202 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:53:20,535 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:53:20,549 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:53:20,584 basehttp "GET /api/users/ HTTP/1.1" 200 1564
+INFO 2025-12-06 22:53:20,590 basehttp "GET /api/users/ HTTP/1.1" 200 1564
+INFO 2025-12-06 22:53:24,066 basehttp "OPTIONS /api/users/6/ HTTP/1.1" 200 0
+INFO 2025-12-06 22:53:24,100 basehttp "DELETE /api/users/6/ HTTP/1.1" 204 0
+INFO 2025-12-06 22:53:45,806 basehttp "POST /api/signup/ HTTP/1.1" 201 366
+INFO 2025-12-06 22:53:45,814 basehttp "GET /api/users/ HTTP/1.1" 200 1564
+INFO 2025-12-06 22:53:59,910 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:53:59,915 basehttp "GET /api/profile/ HTTP/1.1" 200 446
+INFO 2025-12-06 22:53:59,942 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:53:59,944 basehttp "GET /api/stats/ HTTP/1.1" 200 124
+INFO 2025-12-06 22:54:09,722 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:54:09,727 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:54:13,358 basehttp "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-12-06 22:54:13,363 basehttp "GET /api/profile/ HTTP/1.1" 200 720
+INFO 2025-12-06 22:54:13,387 basehttp "GET /api/users/ HTTP/1.1" 200 1564
+INFO 2025-12-06 22:54:13,392 basehttp "GET /api/users/ HTTP/1.1" 200 1564
