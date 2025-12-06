@@ -1,0 +1,25 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ReviewPage from './components/ReviewPage';
+import LoginPage from './components/LoginPage';
+import HomePage from './components/HomePage';
+import UploadPage from './components/UploadPage';
+import BulkReviewList from './components/BulkReviewList';
+
+
+// Minimal app routes for development:
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/upload" element={<UploadPage />} />
+        <Route path="*" element={<div className="p-8 text-center">404 — Page not found</div>} />
+          <Route path="/review/:id" element={<ReviewPage/>} />
+          <Route path="/bulk-review" element={<BulkReviewList />} />
+        </Routes>
+    </Router>
+  );
+}

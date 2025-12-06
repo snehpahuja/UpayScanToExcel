@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPAY | Review Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center gap-4">
+                    <!-- New: Back to List button -->
+                    <a href="bulk-review-list.html" class="flex items-center gap-2 text-sm text-gray-600 hover:text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                        </svg>
+                        Back to List
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Fixed: Previous/Next buttons now don't navigate away -->
+                    <a href="#" title="Previous document" class="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </a>
+                    <span class="text-sm text-gray-600">Document 1 of 4</span>
+                     <a href="#" title="Next document" class="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Document Pane -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex justify-between items-center mb-4">
+                 <div>
+                    <h3 class="text-lg font-semibold">Original Document</h3>
+                    <p class="text-sm text-gray-500">student_records_sept.pdf</p>
+                </div>
+                <div class="space-x-2">
+                    <button class="px-3 py-1 text-sm border rounded-md hover:bg-gray-50">Zoom In (+)</button>
+                    <button class="px-3 py-1 text-sm border rounded-md hover:bg-gray-50">Zoom Out (-)</button>
+                </div>
+            </div>
+            <!-- Fixed: Replaced broken image with a placeholder -->
+            <div class="bg-gray-100 rounded-lg border flex items-center justify-center h-[70vh]">
+                 <img src="https://placehold.co/600x850/e2e8f0/475569?text=Document+Preview" alt="Document Preview Placeholder" class="w-full h-full object-contain rounded-lg">
+            </div>
+        </div>
+
+        <!-- Data Pane -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Extracted Data</h3>
+            <p class="text-sm text-gray-500 mb-4">5 items need attention, 2 missing fields.</p>
+            <div class="space-y-4">
+                <div class="grid grid-cols-3 gap-4 items-center">
+                    <label class="text-sm font-medium text-gray-700">Student ID</label>
+                    <input type="text" value="1023" class="col-span-2 p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                 <div class="grid grid-cols-3 gap-4 items-center">
+                    <label class="text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" value="Anika Sharma" class="col-span-2 p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                 <div class="grid grid-cols-3 gap-4 items-center bg-red-50 p-2 rounded-md ring-1 ring-red-200">
+                    <label class="text-sm font-medium text-red-700">Date of Birth</label>
+                    <input type="text" value="15/O8/2010" class="col-span-2 p-2 border border-red-300 rounded-md focus:ring-red-500 focus:border-red-500">
+                </div>
+                 <div class="grid grid-cols-3 gap-4 items-center">
+                    <label class="text-sm font-medium text-gray-700">Center</label>
+                    <input type="text" value="Mumbai" class="col-span-2 p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                 <div class="grid grid-cols-3 gap-4 items-center">
+                    <label class="text-sm font-medium text-gray-700">Subject</label>
+                    <input type="text" value="Mathematics" class="col-span-2 p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                 <div class="grid grid-cols-3 gap-4 items-center">
+                    <label class="text-sm font-medium text-gray-700">Marks</label>
+                    <input type="text" value="85" class="col-span-2 p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                 <div class="grid grid-cols-3 gap-4 items-center bg-red-50 p-2 rounded-md ring-1 ring-red-200">
+                    <label class="text-sm font-medium text-red-700">Grade</label>
+                    <input type="text" value="A" class="col-span-2 p-2 border border-red-300 rounded-md focus:ring-red-500 focus:border-red-500">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Action Footer -->
+    <footer class="bg-white shadow-inner sticky bottom-0 border-t">
+         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-end items-center py-4 space-x-4">
+                <button class="px-6 py-2 border border-gray-300 text-sm font-medium rounded-md hover:bg-gray-50">Save Draft</button>
+                <a href="confirmation.html" class="px-6 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    Accept & Finalize
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

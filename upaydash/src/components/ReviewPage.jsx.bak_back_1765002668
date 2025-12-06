@@ -1,0 +1,217 @@
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+
+/**
+ * ReviewPage
+ * Converted from review.html prototype.
+ * Fetches /api/documents/:id/ and renders a document preview + editable extracted fields.
+ * Uses fetchWithAuth from src/lib/auth.js if present, otherwise falls back to fetch.
+ */
+
+function getFetchWithAuth() {
+  try {
+    // eslint-disable-next-line import/no-unresolved, global-require
+    const auth = require('../lib/auth');
+    if (auth && auth.fetchWithAuth) return auth.fetchWithAuth;
+  } catch (e) {
+    // no auth helper present
+  }
+  return async (url, opts = {}) => {
+    const res = await fetch(url, opts);
+    if (!res.ok) throw res;
+    return res;
+  };
+}
+
+export default function ReviewPage() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
+  const [doc, setDoc] = useState(null);
+  const [fields, setFields] = useState([]);
+  const [metaMsg, setMetaMsg] = useState(null);
+  const fetchWithAuth = getFetchWithAuth();
+  const API_BASE = (import.meta.env.VITE_API_BASE) ? import.meta.env.VITE_API_BASE : 'http://localhost:8000';
+
+  useEffect(() => {
+    if (!id) return;
+    let cancelled = false;
+    setLoading(true);
+    setMetaMsg(null);
+
+    (async () => {
+      try {
+        const res = await fetchWithAuth(`${API_BASE}/api/documents/${id}/`);
+        const data = (res && res.json) ? await res.json() : res;
+        if (cancelled) return;
+        setDoc(data);
+        // Normalise extracted fields array shape
+        const extracted = data.extracted_fields || data.extracted_data || data.extracted || [];
+        // Map to objects {field_name, field_value, confidence_score, validation_status}
+        setFields(extracted.map((f, i) => ({
+          id: f.id ?? i,
+          field_name: f.field_name ?? f.name ?? `field_${i}`,
+          field_value: f.field_value ?? f.value ?? '',
+          confidence_score: f.confidence_score ?? f.confidence ?? null,
+          validation_status: f.validation_status ?? f.validation ?? 'passed'
+        })));
+      } catch (err) {
+        console.error(err);
+        setMetaMsg('Failed to load document');
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+
+    return () => { cancelled = true; };
+  }, [id]);
+
+  function updateField(idx, key, value) {
+    setFields(prev => {
+      const copy = [...prev];
+      copy[idx] = { ...copy[idx], [key]: value };
+      return copy;
+    });
+  }
+
+  async function saveDraft() {
+    if (!doc) return;
+    setMetaMsg('Saving...');
+    try {
+      const payload = { extracted_fields: fields };
+      const res = await fetchWithAuth(`${API_BASE}/api/documents/${doc.id}/`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      // unwrap
+      const result = (res && res.json) ? await res.json() : res;
+      setMetaMsg('Saved draft');
+      // update local state if backend returned updated fields
+      if (result && (result.extracted_fields || result.extracted_data)) {
+        const extracted = result.extracted_fields || result.extracted_data || [];
+        setFields(extracted.map((f, i) => ({
+          id: f.id ?? i,
+          field_name: f.field_name ?? f.name ?? `field_${i}`,
+          field_value: f.field_value ?? f.value ?? '',
+          confidence_score: f.confidence_score ?? f.confidence ?? null,
+          validation_status: f.validation_status ?? f.validation ?? 'passed'
+        })));
+      }
+    } catch (e) {
+      console.error(e);
+      setMetaMsg('Save failed');
+    }
+  }
+
+  async function acceptAndFinalize() {
+    if (!doc) return;
+    setMetaMsg('Finalizing...');
+    try {
+      // Best-effort: try a dedicated endpoint, fall back to PATCH + status change
+      let res = await fetchWithAuth(`${API_BASE}/api/documents/${doc.id}/finalize/`, {
+        method: 'POST',
+      }).catch(() => null);
+
+      if (!res || !res.ok) {
+        // fallback: patch status to 'approved'
+        res = await fetchWithAuth(`${API_BASE}/api/documents/${doc.id}/`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ status: 'approved' })
+        });
+      }
+      setMetaMsg('Finalized');
+      navigate('/'); // back to home or list
+    } catch (e) {
+      console.error(e);
+      setMetaMsg('Finalize failed');
+    }
+  }
+
+  if (loading) return <div className="p-6">Loading...</div>;
+  if (!doc) return <div className="p-6">Document not found.</div>;
+
+  return (
+    <div className="min-h-screen bg-gray-100">
+      <header className="bg-white shadow-sm sticky top-0 z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-3">
+            <div className="flex items-center gap-4">
+              <button onClick={() => navigate(-1)} className="flex items-center gap-2 text-sm text-gray-600 hover:text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                </svg>
+                Back to List
+              </button>
+            </div>
+            <div className="flex items-center space-x-4">
+              <button title="Previous document" className="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">‹</button>
+              <span className="text-sm text-gray-600">Document {doc.id}</span>
+              <button title="Next document" className="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">›</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className="container mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Document Pane */}
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="flex justify-between items-center mb-4">
+            <div>
+              <h3 className="text-lg font-semibold">Original Document</h3>
+              <p className="text-sm text-gray-500">{doc.original_filename}</p>
+            </div>
+            <div className="space-x-2">
+              <button className="px-3 py-1 text-sm border rounded-md hover:bg-gray-50">Zoom In (+)</button>
+              <button className="px-3 py-1 text-sm border rounded-md hover:bg-gray-50">Zoom Out (-)</button>
+            </div>
+          </div>
+
+          <div className="bg-gray-100 rounded-lg border flex items-center justify-center h-[70vh]">
+            {doc.file_path ? (
+              <img
+                src={(API_BASE + '/' + doc.file_path).replace('//media', '/media')}
+                alt="Document preview"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            ) : (
+              <img src="https://placehold.co/600x850/e2e8f0/475569?text=Document+Preview" alt="placeholder" className="w-full h-full object-contain rounded-lg" />
+            )}
+          </div>
+        </div>
+
+        {/* Data Pane */}
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-lg font-semibold mb-2">Extracted Data</h3>
+          <p className="text-sm text-gray-500 mb-4">{fields.filter(f => f.validation_status !== 'passed').length} items need attention, {fields.filter(f => !f.field_value).length} missing fields.</p>
+
+          <div className="space-y-4">
+            {fields.map((f, idx) => (
+              <div key={f.id} className={`grid grid-cols-3 gap-4 items-center ${f.validation_status !== 'passed' ? 'bg-red-50 p-2 rounded-md ring-1 ring-red-200' : ''}`}>
+                <label className={`text-sm font-medium ${f.validation_status !== 'passed' ? 'text-red-700' : 'text-gray-700'}`}>{f.field_name}</label>
+                <input
+                  type="text"
+                  value={f.field_value}
+                  onChange={(e) => updateField(idx, 'field_value', e.target.value)}
+                  className={`col-span-2 p-2 border ${f.validation_status !== 'passed' ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-gray-300 focus:ring-indigo-500 focus:border-indigo-500'} rounded-md`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+
+      {/* Action Footer */}
+      <footer className="bg-white shadow-inner sticky bottom-0 border-t">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-end items-center py-4 space-x-4">
+            <button onClick={saveDraft} className="px-6 py-2 border border-gray-300 text-sm font-medium rounded-md hover:bg-gray-50">Save Draft</button>
+            <button onClick={acceptAndFinalize} className="px-6 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Accept & Finalize</button>
+          </div>
+          {metaMsg && <div className="p-2 text-sm text-gray-600">{metaMsg}</div>}
+        </div>
+      </footer>
+    </div>
+  );
+}

@@ -1,0 +1,102 @@
+import React, { useState } from "react";
+import { fetchWithAuth } from '../lib/auth';
+
+export default function UploadPage() {
+  const [files, setFiles] = useState([]);
+  const [category, setCategory] = useState("attendance_sheet");
+  const [message, setMessage] = useState("");
+
+  const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000";
+
+  const handleFileChange = (e) => {
+    const selected = Array.from(e.target.files || []);
+    setFiles(selected);
+    setMessage("");
+    console.log("Selected files:", selected);
+  };
+
+  const handleUpload = async () => {
+    if (!files || files.length === 0) {
+      setMessage("Please select at least one file.");
+      return;
+    }
+
+    const formData = new FormData();
+    // backend expects form field name 'files' (multiple)
+    files.forEach((f) => formData.append("files", f));
+    // send category as ID or name; backend will accept category field
+    formData.append("category", category);
+
+    try {
+      console.log("Uploading to:", `${API_BASE}/api/upload/files/`);
+      const res = await fetchWithAuth(`${API_BASE}/api/upload/files/`, {
+        method: "POST",
+        body: formData,
+      });
+
+      const text = await res.text();
+      // try parse JSON, otherwise show raw text
+      try {
+        const data = JSON.parse(text);
+        setMessage(JSON.stringify(data, null, 2));
+        console.log("Upload response:", data);
+      } catch (e) {
+        setMessage(text);
+        console.log("Upload raw response:", text);
+      }
+    } catch (err) {
+      console.error("Upload error:", err);
+      setMessage("Upload failed: " + (err.message || err));
+    }
+  };
+
+  return (
+    <div className="max-w-xl mx-auto bg-white p-6 rounded shadow">
+      <h2 className="text-2xl font-semibold mb-4">Upload Document</h2>
+
+      <label className="block mb-2 font-medium">Select File(s)</label>
+      <input
+        type="file"
+        multiple
+        className="border p-2 w-full mb-4"
+        onChange={handleFileChange}
+      />
+
+      <label className="block mb-2 font-medium">Category</label>
+      <select
+        className="border p-2 w-full mb-4"
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}
+      >
+        <option value="attendance_sheet">Attendance Sheet</option>
+        <option value="student_marksheet">Student Marksheet</option>
+        <option value="class_diary">Class Diary</option>
+        <option value="store_requisition">Store Requisition</option>
+        <option value="store_invoice">Store Invoice</option>
+        <option value="survey_form">Survey Form</option>
+        <option value="visitors_book">Visitors Book</option>
+      </select>
+
+      <div className="flex gap-3">
+        <button
+          onClick={handleUpload}
+          className="bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Upload
+        </button>
+        <button
+          onClick={() => { setFiles([]); setMessage(""); }}
+          className="px-3 py-2 border rounded"
+        >
+          Reset
+        </button>
+      </div>
+
+      {message && (
+        <pre className="bg-gray-100 p-4 mt-4 rounded whitespace-pre-wrap text-sm">
+          {message}
+        </pre>
+      )}
+    </div>
+  );
+}
